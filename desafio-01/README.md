@@ -42,7 +42,9 @@ Para te ajudar nesse desafio, criamos para você um modelo que você pode duplic
 
 O Notion funciona tanto em plataformas mobile, tanto em plataformas desktop, e ambas podem ser baixadas em sua [página oficial](https://www.notion.so/product).
 
-Para começar a utilizar o modelo, você deve acessar o link disponibilizado abaixo, e clicar no botão "Duplicate" que fica no menu do canto superior direito da tela. [Link para o modelo](https://www.notion.so/Cronograma-de-estudos-e390bc8d2f5743668ec03348a3306070).
+Para começar a utilizar o modelo, você deve acessar o link disponibilizado abaixo, e clicar no botão "Duplicate" que fica no menu do canto superior direito da tela. 
+
+📄 **[Link para o modelo](https://www.notion.so/Cronograma-de-estudos-e390bc8d2f5743668ec03348a3306070)**
 
 ### Definindo o cronograma semanal
 

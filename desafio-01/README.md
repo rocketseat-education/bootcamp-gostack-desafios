@@ -36,7 +36,7 @@ Para isso, você deve criar um cronograma que irá se adaptar ao seu tempo e rit
 
 Defina qual será seu horário de estudo, criando tarefas que estarão atreladas a um calendário, para se manter com foco e sempre alinhado com seus objetivos!
 
-Você pode utilizar o modelo disponibilizado através da plataforma. [Link para o modelo](https://www.notion.so/Cronograma-de-estudos-e390bc8d2f5743668ec03348a3306070)
+Você pode duplicar o modelo disponibilizado através da plataforma. [Link para o modelo](https://www.notion.so/Cronograma-de-estudos-e390bc8d2f5743668ec03348a3306070)
 
 ### Definindo o cronograma semanal
 

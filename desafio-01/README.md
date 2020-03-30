@@ -3,13 +3,13 @@
 </h1>
 
 <h3 align="center">
-  Desafio 1: Conceitos do NodeJS
+  Desafio 1: Planejando meus estudos
 </h3>
 
 <p align="center">“Sua única limitação é você mesmo”!</blockquote>
 
 <p align="center">
-  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/rocketseat/bootcamp-gostack-desafio-01?color=%2304D361">
+  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/rocketseat/bootcamp-gostack-desafios?color=%2304D361">
 
   <a href="https://rocketseat.com.br">
     <img alt="Made by Rocketseat" src="https://img.shields.io/badge/made%20by-Rocketseat-%2304D361">
@@ -17,14 +17,14 @@
 
   <img alt="License" src="https://img.shields.io/badge/license-MIT-%2304D361">
 
-  <a href="https://github.com/Rocketseat/bootcamp-gostack-desafio-01/stargazers">
-    <img alt="Stargazers" src="https://img.shields.io/github/stars/rocketseat/bootcamp-gostack-desafio-01?style=social">
-  </a
+  <a href="https://github.com/Rocketseat/bootcamp-gostack-desafios/stargazers">
+    <img alt="Stargazers" src="https://img.shields.io/github/stars/rocketseat/bootcamp-gostack-desafios?style=social">
+  </a>
 </p>
 
 <p align="center">
   <a href="#rocket-sobre-o-desafio">Sobre o desafio</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-entrega">Entrega</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#calendar-entrega">Entrega</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#memo-licença">Licença</a>
 </p>
 
@@ -36,13 +36,23 @@ Para isso, você deve criar um cronograma que irá se adaptar ao seu tempo e rit
 
 Defina qual será seu horário de estudo, criando tarefas que estarão atreladas a um calendário, para se manter com foco e sempre alinhado com seus objetivos!
 
-Você pode duplicar o modelo disponibilizado através da plataforma. [Link para o modelo](https://www.notion.so/Cronograma-de-estudos-e390bc8d2f5743668ec03348a3306070)
+### Modelo de cronograma
+
+Para te ajudar nesse desafio, criamos para você um modelo que você pode duplicar através da plataforma Notion. O Modelo pode ser acessado através do seguinte link: [Link para o modelo](https://www.notion.so/Cronograma-de-estudos-e390bc8d2f5743668ec03348a3306070).
 
 ### Definindo o cronograma semanal
+
+<p align="center">
+  <img width="80%" src="./assets/cronograma-diario.png">
+</p>
 
 Nessa sessão você deve informar os horários fixos que você irá se dedicar durante a sua jornada como programador, afinal, a rotina de estudos será o primeiro passo para você conseguir atingir os seus objetivos o mais rápido possível!
 
 ### Definindo o cronograma diário
+
+<p align="center">
+  <img width="80%" src="./assets/cronograma-semanal.png">
+</p>
 
 Agora você deve planejar suas tarefas diárias para que você consiga estar preparado para todo o conteúdo que irá consumir durante a semana.
 
@@ -52,7 +62,7 @@ Nesse módelo já deixamos preparados tudo o que você pode fazer para essa prim
 
 Dica: Adicione conteúdo extra como conteúdo para leitura e podcasts, lembre-se de ter pequenas pausas para descansar e assimilar o conteúdo estudado. Adicione também tempo reservado para criação de conteúdos, como posts em um blog pessoal ou linkedin.
 
-## 📅 Entrega
+## :calendar: Entrega
 
 Esse desafio deve ser entregue a partir da plataforma Skylab. Após concluir o desafio, fazer um post no Linkedin sobre ele é uma boa forma de demonstrar seus esforços para evoluir na sua carreira para oportunidades futuras.
 

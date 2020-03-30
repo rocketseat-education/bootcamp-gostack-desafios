@@ -60,11 +60,11 @@ Nessa sessão você deve informar os horários fixos que você irá se dedicar d
 
 Agora você deve planejar suas tarefas diárias para que você consiga estar preparado para todo o conteúdo que irá consumir durante a semana.
 
-Aqui você pode seguir o modelo disponibilizado abaixo para criar seu próprio calendário de estudos, para que você consiga sempre me manter organizado e focado nos seus objetivos.
+Aqui você pode seguir o modelo disponibilizado abaixo para criar seu próprio calendário de estudos, para que você consiga sempre se manter organizado e focado nos seus objetivos.
 
-Nesse módelo já deixamos preparados tudo o que você pode fazer para essa primeira semana de conteúdos do Bootcamp, você apenas precisará adaptar ao seu ritmo.
+Nesse modelo já deixamos preparados tudo o que você pode fazer para essa primeira semana de conteúdos do Bootcamp, você apenas precisará adaptar ao seu ritmo.
 
-Dica: Adicione conteúdo extra como conteúdo para leitura e podcasts, lembre-se de ter pequenas pausas para descansar e assimilar o conteúdo estudado. Adicione também tempo reservado para criação de conteúdos, como posts em um blog pessoal ou linkedin.
+Dica: Adicione conteúdo extra como leituras e podcasts, lembre-se de ter pequenas pausas para descansar e assimilar o material estudado. Adicione também tempo reservado para criação de conteúdos, como posts em um blog pessoal ou linkedin.
 
 ## :calendar: Entrega
 
@@ -76,4 +76,4 @@ Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE.md) para
 
 ---
 
-Feito com ♥ by Rocketseat :wave: [Entre na nossa comunidade!](https://discordapp.com/invite/gCRAFhc)
+Feito com 💜 by Rocketseat :wave: [Entre na nossa comunidade!](https://discordapp.com/invite/gCRAFhc)

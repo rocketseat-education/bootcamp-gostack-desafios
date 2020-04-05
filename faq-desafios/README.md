@@ -53,3 +53,11 @@ Sabendo disso, nesse exemplo, se formos até o código, vamos ver que de fato a 
 <p align="center">
   <img src="./assets/code-example.png">
 </p>
+
+## :memo: Licença
+
+Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE.md) para mais detalhes.
+
+---
+
+Feito com 💜 by Rocketseat :wave: [Entre na nossa comunidade!](https://discordapp.com/invite/gCRAFhc)

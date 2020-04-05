@@ -1,7 +1,7 @@
 <img alt="GoStack" src="https://storage.googleapis.com/golden-wind/bootcamp-gostack/header-desafios.png" />
 
 <h3 align="center">
-  Desafio 02: Conceitos do NodeJS
+  Desafio 02: Conceitos do Node.js
 </h3>
 
 <p align="center">“Não espere para plantar, apenas tenha paciência para colher”!</blockquote>
@@ -28,17 +28,17 @@
 
 ## :rocket: Sobre o desafio
 
-Nesse desafio, você deve criar uma aplicação para treinar o que você aprendeu até agora no NodeJS!
+Nesse desafio, você deve criar uma aplicação para treinar o que você aprendeu até agora no Node.js!
 
-Essa será uma aplicação para armazenar repositórios do github, que irá permitir a criação, listagem, atualização e remoção dos repositórios, e além disso permitir que os repositórios possam receber "likes".
+Essa será uma aplicação para armazenar repositórios do seu portfólio, que irá permitir a criação, listagem, atualização e remoção dos repositórios, e além disso permitir que os repositórios possam receber "likes".
 
 ### Template da aplicação
 
-Para te ajudar nesse desafio, criamos para você um modelo que você pode clonar através do npm.js.
+Para te ajudar nesse desafio, criamos para você um modelo que você pode clonar através do github.
 
-O Template pode ser clonado utilizando o comando `comando aqui`.
+O Template pode ser clonado utilizando o comando `comando aqui`. (Lembre-se que você precisa do Git instalado em sua máquina, caso ainda não tenha: https://git-scm.com/)
 
-Agora navegue até a pasta criada e abre no VSCODE, e você terá algo parecido com isso:
+Agora navegue até a pasta criada e abra no Visual Studio Code, e você terá algo parecido com isso:
 
 <p align="center">
   <img  src="./assets/nodejs-example.png">
@@ -48,7 +48,7 @@ Agora navegue até a pasta criada e abre no VSCODE, e você terá algo parecido 
 
 Agora que você já está com o template clonado, e pronto para continuar, você deve abrir o arquivo app.js, e completar onde não possui código com o código para atingir os objetivos de cada rota.
 
-- **`POST /repositories`**: A rota deve receber `title`, `url` e `techs` dentro do corpo da requisição, sendo a URL o link para o github desse repositório. Ao cadastrar um novo projeto, ele deve ser armazenado dentro de um objeto no seguinte formato: `{ id: "uuid", title: 'Desafio NodeJS', techs: ["NodeJS", "..."], likes: 0 }`; Certifique-se que o ID seja um UUID, e de sempre iniciar os likes como 0.
+- **`POST /repositories`**: A rota deve receber `title`, `url` e `techs` dentro do corpo da requisição, sendo a URL o link para o github desse repositório. Ao cadastrar um novo projeto, ele deve ser armazenado dentro de um objeto no seguinte formato: `{ id: "uuid", title: 'Desafio Node.js', techs: ["Node.js", "..."], likes: 0 }`; Certifique-se que o ID seja um UUID, e de sempre iniciar os likes como 0.
 
 - **`GET /repositories`**: Rota que lista todos os repositórios;
 
@@ -58,55 +58,11 @@ Agora que você já está com o template clonado, e pronto para continuar, você
 
 - **`POST /repositories/:id/like`**: A rota deve aumentar o número de likes do repositório específico escolhido através do `id` presente nos parâmetros da rota, a cada chamada dessa rota, o número de likes deve ser aumentado em 1;
 
-### Testes automatizados
-
-Para te ajudar a saber se você está no caminho certo, no projeto que você já clonou deixamos alguns testes automatizados.
-
-Os testes sempre vão ficar dentro de uma pasta chamada `__tests__` dentro da pasta `src`.
-
-Dentro da pasta de testes, para cada arquivo testado na sua aplicação, existe um arquivo com o mesmo nome, com a extensão `.spec.js`.
-
-Para começar a utilizar os testes, execute o comando `yarn test` no seu terminal, e ele irá te retornar o resultado dos testes das rotas.
-
-Isso deve te retornar vários erros logo após clonar o projeto, como esse:
-
-<p align="center">
-  <img src="./assets/tests-example.png">
-</p>
-
-Esse erro significa que a princípio o teste não recebeu nenhum retorno das rotas, então é agora que é a hora de codar, experimente ir adicionando seus códigos para cumprir os requisitos do desafio. :rocket:
-
-**Dica 1**: Nem sempre você precisa usar apenas os testes para saber se tudo está funcionando, você pode sempre executar o `yarn dev` e testar sua aplicação utilizando o insomnia caso prefira.
-
-**Dica 2**: Esses testes serão os mesmos testes que irão corrigir seu desafio e dará sua nota, então recomendamos que os siga a risca e tenha certeza que todos passem para receber nota máxima!
-
-### Entendendo os erros dos testes
-
-Agora que você já sabe como rodar os testes, você também deve entender a interpretá-los. Vamos começar analisando a seguinte imagem:
-
-<p align="center">
-  <img src="./assets/understanding-tests.png">
-</p>
-
-Logo acima da imagem, temos em vermelho um título que específica qual teste deu errado. Nesse caso o teste que falhou é o teste **`should be able to give a like to the repository`**, do módulo de **Likes**.
-
-Para entender o que deu de errado, posso olhar exatamente esse trecho:
-
-<p align="center">
-  <img src="./assets/expect-test.png">
-</p>
-
-Disso podemos entender que o teste esperava receber o valor `likes: 1`, mas recebeu `likes: 0`.
-
-Sabendo disso, see eu for até o meu código, vou ver que de fato na minha função de aumentar o número de likes eu nunca incrementei esse valor, então os likes do repositório encontrado sempre serão retornados como 0.
-
-<p align="center">
-  <img src="./assets/code-example.png">
-</p>
-
 ### Específicação dos testes
 
 Em cada teste, tem uma breve descrição no que sua aplicação deve cumprir para que o teste passe.
+
+Caso você tenha dúvidas quanto ao que são os testes, e como interpretá-los, dé uma olhada em **[nosso FAQ](https://github.com/Rocketseat/bootcamp-gostack-desafios/tree/master/faq-desafios).**
 
 Para esse desafio temos os seguintes testes:
 

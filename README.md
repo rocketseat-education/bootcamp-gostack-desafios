@@ -7,7 +7,7 @@
 
 - [00 - Dúvidas frequentes sobre os desafios](https://github.com/rocketseat/bootcamp-gostack-desafios/tree/master/faq-desafios)
 - [01 - Planejando meus estudos](https://github.com/Rocketseat/bootcamp-gostack-desafios/tree/master/desafio-01)
-- [02 - Conceitos do Node.js](https://github.com/Rocketseat/bootcamp-gostack-desafios/tree/master/desafio-ceonceitos-nodejs)
+- [02 - Conceitos do Node.js](https://github.com/Rocketseat/bootcamp-gostack-desafios/tree/master/desafio-conceitos-nodejs)
 - [03 - Conceitos do ReactJS](https://github.com/Rocketseat/bootcamp-gostack-desafios/tree/master/desafio-conceitos-reactjs)
 - [04 - Conceitos do React Native](https://github.com/Rocketseat/bootcamp-gostack-desafios/tree/master/desafio-conceitos-react-native)
 

@@ -5,8 +5,44 @@
 
 ## Dúvidas
 
+- [Como fazer o fork de um repositório?](#como-fazer-o-fork-de-um-repositório)
 - [O que são os testes automatizados?](#o-que-são-os-testes-automatizados)
 - [Como interpretar os erros nos testes?](#como-interpretar-os-erros-nos-testes)
+
+### Como fazer o fork de um repositório?
+
+Em alguns desafios, você precisará fazer o download de um template que disponibilizamos para ter consigo uma estrutura inicial e os testes que disponibilizamos que serão utilizados na correção desses desafios.
+
+Para isso, você vai precisar fazer um fork do repositório relacionado ao desafio que você deseja.
+
+Para realizar esse fork, você precisa seguir os seguintes passos:
+
+- **1º passo**: Acesse a página do github do desafio de interesse.
+- **2º passo**: Dentro da página do github, clique no botão "fork" no canto superior direito da tela.
+
+<p align="center">
+  <img src="./assets/fork-button.png">
+</p>
+
+- **3º passo**: Após clicar no botão, irá aparecer um modal que você deve escolher para onde irá o fork desse repositório e você deve escolher seu usuário. Caso não apareça nada, siga pro próximo passo.
+
+<p align="center">
+  <img src="./assets/select-user.png">
+</p>
+
+- **4º passo**: Você será redirecionado para a página do seu usuário com o fork do projeto
+
+- **5º passo**: Para clonar o repositório, clique no botão "Clone or download" e irá aparecer um menu.copie a URL que aparece logo abaixo do botão.
+
+<p align="center">
+  <img src="./assets/clone-download.png">
+</p>
+
+- **6º passo**: No seu terminal, navegue até a sua pasta de preferência e rode o comando `git clone {URL_DO_REPOSITORIO}`, isso irá baixar todos os arquivos para a sua máquina. (Lembre-se que você precisa do Git instalado em sua máquina, caso ainda não tenha: https://git-scm.com/)
+
+- **7º passo**: Agora com seu repositório baixado na sua máquina, é só você fazer todas as alterações que você desejar, e envia-las para o github para o repositório que você acabou de fazer o fork.
+
+**Dica**: Caso você não tenha conhecimento sobre Git & Github, temos bonus exclusivos para nossos alunos do Bootcamp GoStack ensinando tudo sobre a ferramente. Além de um [vídeo no youtube](https://www.youtube.com/watch?v=2alg7MQ6_sI) sobre o assunto.
 
 ### O que são os testes automatizados?
 

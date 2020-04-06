@@ -36,7 +36,9 @@ Essa será uma aplicação para armazenar repositórios do seu portfólio, que i
 
 Para te ajudar nesse desafio, criamos para você um modelo que você pode clonar através do github.
 
-O Template pode ser clonado utilizando o comando `comando aqui`. (Lembre-se que você precisa do Git instalado em sua máquina, caso ainda não tenha: https://git-scm.com/)
+Você deve fazer um fork do seguinte template para realizar o desafio: **[Acessar Template](https://github.com/Rocketseat/gostack-template-conceitos-nodejs)**
+
+**Dica**: Caso não saiba como fazer o fork de um projeto, temos um guia em **[nosso FAQ](https://github.com/Rocketseat/bootcamp-gostack-desafios/tree/master/faq-desafios).**
 
 Agora navegue até a pasta criada e abra no Visual Studio Code, e você terá algo parecido com isso:
 
@@ -86,7 +88,7 @@ Para esse desafio temos os seguintes testes:
 
 ## :calendar: Entrega
 
-Esse desafio deve ser entregue a partir da plataforma Skylab. Após concluir o desafio, fazer um post no Linkedin e postar o código no Github é uma boa forma de demonstrar seus conhecimentos e esforços para evoluir na sua carreira para oportunidades futuras.
+Esse desafio deve ser entregue a partir da plataforma Skylab, envie o link do repositório que você fez o fork com suas alterações. Após concluir o desafio, fazer um post no Linkedin e postar o código no Github é uma boa forma de demonstrar seus conhecimentos e esforços para evoluir na sua carreira para oportunidades futuras.
 
 ## :memo: Licença
 

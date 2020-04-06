@@ -32,7 +32,7 @@ Para realizar esse fork, você precisa seguir os seguintes passos:
 
 - **4º passo**: Você será redirecionado para a página do seu usuário com o fork do projeto
 
-- **5º passo**: Para clonar o repositório, clique no botão "Clone or download" e irá aparecer um menu.copie a URL que aparece logo abaixo do botão.
+- **5º passo**: Para clonar o repositório, clique no botão "Clone or download" e irá aparecer um menu. Copie a URL que aparece logo abaixo do botão.
 
 <p align="center">
   <img src="./assets/clone-download.png">

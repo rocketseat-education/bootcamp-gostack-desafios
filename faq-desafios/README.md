@@ -42,7 +42,7 @@ Para realizar esse fork, você precisa seguir os seguintes passos:
 
 - **7º passo**: Agora com seu repositório baixado na sua máquina, é só você fazer todas as alterações que você desejar, e envia-las para o github para o repositório que você acabou de fazer o fork.
 
-**Dica**: Caso você não tenha conhecimento sobre Git & Github, temos bonus exclusivos para nossos alunos do Bootcamp GoStack ensinando tudo sobre a ferramente. Além de um [vídeo no youtube](https://www.youtube.com/watch?v=2alg7MQ6_sI) sobre o assunto.
+**Dica**: Caso você não tenha conhecimento sobre Git & Github, temos bonus exclusivos para nossos alunos do Bootcamp GoStack ensinando tudo sobre a ferramenta. Além de um [vídeo no youtube](https://www.youtube.com/watch?v=2alg7MQ6_sI) sobre o assunto.
 
 ### O que são os testes automatizados?
 

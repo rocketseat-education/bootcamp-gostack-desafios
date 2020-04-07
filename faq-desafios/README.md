@@ -13,7 +13,7 @@
 
 Para facilitar o entendimento das principais dúvidas dos alunos, adicionamos um vídeo mostrando tudo que você precisa saber para conseguir entregar os desafios:
 
-<a href="https://youtu.be/GPcVn1LzER0" align="center">
+<a href="https://youtu.be/GPcVn1LzER0" target="_blank" align="center">
   <img src="./assets/video-tutorial.png">
 </a>
 

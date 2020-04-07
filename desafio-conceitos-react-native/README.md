@@ -40,7 +40,7 @@ O template está disponível na seguinte url: **[Acessar Template](https://githu
 
 **Dica**: Caso não saiba utilizar repositórios do github como template, temos um guia em **[nosso FAQ](https://github.com/Rocketseat/bootcamp-gostack-desafios/tree/master/faq-desafios).**
 
-Agora navegue até a pasta criada e abra no Visual Studio Code, e já estará pronto para iniciar.
+Agora navegue até a pasta criada e abra no Visual Studio Code, execute o comando `yarn` no seu terminal para instalar todas as dependências e já estará pronto para iniciar.
 
 ### Funcionalidades da aplicação
 

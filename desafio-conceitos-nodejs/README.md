@@ -78,7 +78,7 @@ Para esse desafio temos os seguintes testes:
 
 - **`should not be able to update repository likes manually`**: Para que esse teste passe, você não deve permitir que sua rota de update altere diretamente os likes desse repositório, mantendo o mesmo número de likes que o repositório já possuia antes da atualização. Isso porque o único lugar que deve atualizar essa informação é a rota de responsável por aumentar o número de likes.
 
-- **`should be able to delete the repository`**: Para que esse teste passe, você deve perimtir que a sua rota de delete excluia um projeto, e ao fazer a exclusão, ele retorne uma resposta vazia, com status `204`.
+- **`should be able to delete the repository`**: Para que esse teste passe, você deve permitir que a sua rota de delete exclua um projeto, e ao fazer a exclusão, ele retorne uma resposta vazia, com status `204`.
 
 - **`should not be able to delete a repository that does not exist`**: Para que esse teste passe, você deve validar na sua rota de delete se o id do repositório enviado pela url existe ou não. Caso não exista, retornar um erro com status `400`.
 

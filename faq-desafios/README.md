@@ -9,6 +9,14 @@
 - [O que são os testes automatizados?](#o-que-são-os-testes-automatizados)
 - [Como interpretar os erros nos testes?](#como-interpretar-os-erros-nos-testes)
 
+### Introdução
+
+Para facilitar o entendimento das principais dúvidas dos alunos, adicionamos um vídeo mostrando tudo que você precisa saber para conseguir entregar os desafios:
+
+<a href="https://youtu.be/GPcVn1LzER0" align="center">
+  <img src="./assets/video-tutorial.png">
+</a>
+
 ### Como utilizar um repositório do github como template?
 
 Em alguns desafios, você precisará fazer o download de um template que disponibilizamos para ter consigo uma estrutura inicial e os testes que disponibilizamos que serão utilizados na correção desses desafios.

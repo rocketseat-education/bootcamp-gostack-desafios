@@ -30,15 +30,15 @@
 
 Nesse desafio, você deve continuar desenvolvendo a apliação de gestão de transações, treinando o que você aprendeu até agora no Node.js junto ao TypeScript, mas dessa vez incluindo o uso de banco de dados com o TypeORM e envio de arquivos com o Multer!
 
-Essa será uma aplicação para que deve armazenar transações financeiras de entrada e saída, que deve permitir o cadastro e a listagem dessas transações e geração de relatórios a partir do envio de um arquivo csv.
+Essa será uma aplicação que deve armazenar transações financeiras de entrada e saída e permitir o cadastro e a listagem dessas transações, além de permitir a geração de relatórios a partir do envio de um arquivo csv.
 
 ### Template da aplicação
 
-Para te ajudar nesse desafio, criamos para você um modelo que você deve utilizar como um template do github.
+Para te ajudar nesse desafio, criamos para você um modelo que você deve utilizar como um template do Github.
 
 O template está disponível na seguinte url: **[Acessar Template](https://github.com/Rocketseat/gostack-template-typeorm-upload)**
 
-**Dica**: Caso não saiba utilizar repositórios do github como template, temos um guia em **[nosso FAQ](https://github.com/Rocketseat/bootcamp-gostack-desafios/tree/master/faq-desafios).**
+**Dica**: Caso não saiba utilizar repositórios do Github como template, temos um guia em **[nosso FAQ](https://github.com/Rocketseat/bootcamp-gostack-desafios/tree/master/faq-desafios).**
 
 Agora navegue até a pasta criada e abra no Visual Studio Code, lembre-se de executar o comando `yarn` no seu terminal para instalar todas as dependências.
 
@@ -46,11 +46,11 @@ Agora navegue até a pasta criada e abra no Visual Studio Code, lembre-se de exe
 
 Agora que você já está com o template clonado e pronto para continuar, você deve verificar os arquivos da pasta `src` e completar onde não possui código com o código para atingir os objetivos de cada rota.
 
-- **`POST /transactions`**: A rota deve receber `title`, `value`, `type`, e `category` dentro do corpo da requisição, sendo o `type` o tipo da transação, que deve ser `income` para entradas (depósitos) e `outcome` para saidas (retiradas). Ao cadastrar uma nova transação, ela deve ser armazenada dentro do seu banco de dados, possuindo os campos `id`, `title`, `value`, `type`, `category_id`, `created_at`, `updated_at`.
+- **`POST /transactions`**: A rota deve receber `title`, `value`, `type`, e `category` dentro do corpo da requisição, sendo o `type` o tipo da transação, que deve ser `income` para entradas (depósitos) e `outcome` para saídas (retiradas). Ao cadastrar uma nova transação, ela deve ser armazenada dentro do seu banco de dados, possuindo os campos `id`, `title`, `value`, `type`, `category_id`, `created_at`, `updated_at`.
 
-**Dica**: Para a categoria, você deve criar uma nova tabela, que terão os campos `id`, `title`, `created_at`, `updated_at`.
+**Dica**: Para a categoria, você deve criar uma nova tabela, que terá os campos `id`, `title`, `created_at`, `updated_at`.
 
-**Dica 2**: Antes de criar uma nova categoria, sempre verifique se já existe uma categoria com o mesmo título. Caso ela existe, use o `id` já existente no banco de dados.
+**Dica 2**: Antes de criar uma nova categoria, sempre verifique se já existe uma categoria com o mesmo título. Caso ela exista, use o `id` já existente no banco de dados.
 
 ```json
 {
@@ -62,9 +62,9 @@ Agora que você já está com o template clonado e pronto para continuar, você 
 }
 ```
 
-**Dica**: Para criar uma categoria, sempre verifique antes se a categoria já existe no banco de dados. Por exemplo, se a categoria "Alimentação" não exista no banco de dados, crie essa categoria no mesmo momento, e utilize o id criado. Caso ela já existe, utilize o id que já está presente no banco de dados.
+**Dica**: Para criar uma categoria, sempre verifique antes se a categoria já existe no banco de dados. Por exemplo, se a categoria "Alimentação" não existir no banco de dados, crie essa categoria no mesmo momento, e utilize o id criado. Caso ela já exista, utilize o `id` que já está presente no banco de dados.
 
-- **`GET /transactions`**: Essa rota deve retornar uma listagem com todas as transações que você cadastrou até agora, junto com o valor de soma de entradas, retiradas e total de crédito. Essa rota deve retornar um objeto com o formato a seguir:
+- **`GET /transactions`**: Essa rota deve retornar uma listagem com todas as transações que você cadastrou até agora, junto com o valor da soma de entradas, retiradas e total de crédito. Essa rota deve retornar um objeto com o formato a seguir:
 
 ```json
 {
@@ -110,7 +110,7 @@ Agora que você já está com o template clonado e pronto para continuar, você 
 
 **Dica 2**: Para fazer a soma dos valores, você pode usar a função [reduce](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce) para agrupar as transações pela propriedade `type`, assim você irá conseguir somar todos os valores com facilidade e obter o retorno do `balance`.
 
-- **`DELETE /transactions/:id`**: A rota deve deletar uma transação com o id presente nos parâmetros da rota;
+- **`DELETE /transactions/:id`**: A rota deve deletar uma transação com o `id` presente nos parâmetros da rota;
 
 * **`POST /transactions/import`**: A rota deve permitir a importação de um arquivo com formato `.csv` contendo as mesmas informações necessárias para criação de uma transação `id`, `title`, `value`, `type`, `category_id`, `created_at`, `updated_at`, onde cada linha do arquivo CSV deve ser um novo registro para o banco de dados, e por fim retorne todas as `transactions` que foram importadas para seu banco de dados. O arquivo csv, deve seguir o seguinte [modelo](./assets/file.csv)
 
@@ -120,7 +120,7 @@ Em cada teste, tem uma breve descrição no que sua aplicação deve cumprir par
 
 Caso você tenha dúvidas quanto ao que são os testes, e como interpretá-los, dé uma olhada em **[nosso FAQ](https://github.com/Rocketseat/bootcamp-gostack-desafios/tree/master/faq-desafios).**
 
-Para esse desafio temos os seguintes testes:
+Para esse desafio, temos os seguintes testes:
 
 <h4 align="center">
   ⚠️ Antes de rodar os testes, crie um banco de dados com o nome "gostack_desafio06_tests" para que todos os testes possam executar corretamente ⚠️

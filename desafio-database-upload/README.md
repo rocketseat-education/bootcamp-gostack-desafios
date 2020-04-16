@@ -74,28 +74,40 @@ Agora que você já está com o template clonado e pronto para continuar, você 
       "title": "Salário",
       "value": 4000,
       "type": "income",
-      "category": "Salary"
+      "category": {
+        "id": "uuid",
+        "title": "Salary"
+      }
     },
     {
       "id": "uuid",
       "title": "Freela",
       "value": 2000,
       "type": "income",
-      "category": "Others"
+      "category": {
+        "id": "uuid",
+        "title": "Others"
+      }
     },
     {
       "id": "uuid",
       "title": "Pagamento da fatura",
       "value": 4000,
       "type": "outcome",
-      "category": "Others"
+      "category": {
+        "id": "uuid",
+        "title": "Others"
+      }
     },
     {
       "id": "uuid",
       "title": "Cadeira Gamer",
       "value": 1200,
       "type": "outcome",
-      "category": "Recreation"
+      "category": {
+        "id": "uuid",
+        "title": "Recreation"
+      }
     }
   ],
   "balance": {

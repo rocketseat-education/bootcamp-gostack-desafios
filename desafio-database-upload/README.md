@@ -62,8 +62,6 @@ Agora que você já está com o template clonado e pronto para continuar, você 
 }
 ```
 
-**Dica**: Para criar uma categoria, sempre verifique antes se a categoria já existe no banco de dados. Por exemplo, se a categoria "Alimentação" não existir no banco de dados, crie essa categoria no mesmo momento, e utilize o id criado. Caso ela já exista, utilize o `id` que já está presente no banco de dados.
-
 - **`GET /transactions`**: Essa rota deve retornar uma listagem com todas as transações que você cadastrou até agora, junto com o valor da soma de entradas, retiradas e total de crédito. Essa rota deve retornar um objeto com o formato a seguir:
 
 ```json

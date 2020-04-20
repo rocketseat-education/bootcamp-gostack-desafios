@@ -76,6 +76,13 @@ Para isso, você pode utilizar a funcionalidade de eager loading do TypeORM, adi
 category: Category;
 ```
 
+Lembre também de fazer o mesmo na model de Category, mas referenciando a tabela de Transaction.
+
+```js
+@OneToMany(() => Transaction, transaction => transaction.category)
+transaction: Transaction;
+```
+
 ### Layout da aplicação
 
 Essa aplicação possui um layout que você pode seguir para conseguir visualizar o seu funcionamento.

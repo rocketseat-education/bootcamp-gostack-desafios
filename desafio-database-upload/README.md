@@ -154,7 +154,7 @@ Para esse desafio, temos os seguintes testes:
 
 Esse desafio deve ser entregue a partir da plataforma Skylab, envie o link do repositório que você fez suas alterações. Após concluir o desafio, fazer um post no Linkedin e postar o código no Github é uma boa forma de demonstrar seus conhecimentos e esforços para evoluir na sua carreira para oportunidades futuras.
 
-futuras.
+
 
 ## Solução do desafio
 

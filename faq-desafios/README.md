@@ -78,7 +78,7 @@ Esse erro significa que a princípio o teste não recebeu nenhum retorno das rot
 
 ### Como interpretar os erros nos testes?
 
-Agora que você já sabe como rodar os testes, você também deve entender a interpretá-los. Vamos começar analisando a seguinte imagem:
+Agora que você já sabe como rodar os testes, você também deve entender como interpretá-los. Vamos começar analisando a seguinte imagem:
 
 <p align="center">
   <img src="./assets/understanding-tests.png">
@@ -86,7 +86,7 @@ Agora que você já sabe como rodar os testes, você também deve entender a int
 
 Logo acima da imagem, temos em vermelho um título que específica qual teste deu errado. Nesse caso o teste que falhou é o teste **`should be able to give a like to the repository`**, do módulo de **Likes**.
 
-Para entender o que deu de errado, posso olhar exatamente esse trecho:
+Para entender o que houve de errado, posso olhar exatamente esse trecho:
 
 <p align="center">
   <img src="./assets/expect-test.png">

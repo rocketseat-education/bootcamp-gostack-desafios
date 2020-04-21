@@ -119,11 +119,11 @@ Esse desafio deve ser entregue a partir da plataforma Skylab, envie o link do re
 
 ## Solução do desafio
 
-Caso você queira assistir como resolver esse desafio, temos um video explicando o passo a passo para cumprir com todos os requisitos do desafio. [Clique aqui](https://youtu.be/FYsFvjM6AJM) para assistir.
+Caso você queira ver como resolver o desafio, fizemos um video explicando o passo a passo para cumprir com todos os requisitos da aplicação. [Clique aqui](https://youtu.be/FYsFvjM6AJM) para assistir.
 
 ## :memo: Licença
 
-Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE.md) para mais detalhes.
+Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
 
 ---
 

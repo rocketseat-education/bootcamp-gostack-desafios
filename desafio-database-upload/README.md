@@ -62,7 +62,7 @@ Agora que você já está com o template clonado e pronto para continuar, você 
 }
 ```
 
-- **`GET /transactions`**: Essa rota deve retornar uma listagem com todas as transações que você cadastrou até agora, junto com o valor da soma de entradas, retiradas e total de crédito. Essa rota deve retornar um objeto com o formato a seguir:
+- **`GET /transactions`**: Essa rota deve retornar uma listagem com todas as transações que você cadastrou até agora, junto com o valor da soma de entradas, retiradas e total de crédito. Essa rota deve retornar um objeto o seguinte formato:
 
 ```json
 {
@@ -154,15 +154,13 @@ Para esse desafio, temos os seguintes testes:
 
 Esse desafio deve ser entregue a partir da plataforma Skylab, envie o link do repositório que você fez suas alterações. Após concluir o desafio, fazer um post no Linkedin e postar o código no Github é uma boa forma de demonstrar seus conhecimentos e esforços para evoluir na sua carreira para oportunidades futuras.
 
-
-
 ## Solução do desafio
 
-Caso você queira assistir como resolver esse desafio, temos um video explicando o passo a passo para cumprir com todos os requisitos do desafio. [Clique aqui](https://www.youtube.com/watch?v=aEUDRBBbo-Y) para assistir.
+Caso você queira ver como resolver o desafio, fizemos um video explicando o passo a passo para cumprir com todos os requisitos da aplicação. [Clique aqui](https://www.youtube.com/watch?v=aEUDRBBbo-Y) para assistir.
 
 ## :memo: Licença
 
-Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE.md) para mais detalhes.
+Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
 
 ---
 

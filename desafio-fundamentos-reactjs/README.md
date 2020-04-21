@@ -44,7 +44,7 @@ Agora navegue até a pasta criada e abra no Visual Studio Code, lembre-se de exe
 
 ### Preparando o backend
 
-Antes de tudo, para que seu frontend se conecte corretamente ao backend, vá até a pasta do seu `backend` e execute o comando `yarn add cors`.
+Antes de tudo, para que seu frontend se conecte corretamente ao backend, vá até a pasta do seu `backend` e execute o comando `yarn add cors @types/cors`.
 
 Depois disso vá até o seu `app.ts` ainda no backend, e importe o `cors` e adicione `app.use(cors())` antes da linha que contém `app.use(routes)`;
 
@@ -131,7 +131,7 @@ Esse desafio deve ser entregue a partir da plataforma Skylab, envie o link do re
 
 ## :memo: Licença
 
-Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE.md) para mais detalhes.
+Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
 
 ---
 

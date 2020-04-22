@@ -74,8 +74,12 @@ Agora que você já está com o template clonado e pronto para continuar, você 
       "type": "income",
       "category": {
         "id": "uuid",
-        "title": "Salary"
-      }
+        "title": "Salary",
+        "created_at": "2020-04-20T00:00:49.620Z",
+        "updated_at": "2020-04-20T00:00:49.620Z",
+      },
+      "created_at": "2020-04-20T00:00:49.620Z",
+      "updated_at": "2020-04-20T00:00:49.620Z",
     },
     {
       "id": "uuid",
@@ -84,8 +88,12 @@ Agora que você já está com o template clonado e pronto para continuar, você 
       "type": "income",
       "category": {
         "id": "uuid",
-        "title": "Others"
-      }
+        "title": "Others",
+        "created_at": "2020-04-20T00:00:49.620Z",
+        "updated_at": "2020-04-20T00:00:49.620Z",
+      },
+      "created_at": "2020-04-20T00:00:49.620Z",
+      "updated_at": "2020-04-20T00:00:49.620Z",
     },
     {
       "id": "uuid",
@@ -94,8 +102,12 @@ Agora que você já está com o template clonado e pronto para continuar, você 
       "type": "outcome",
       "category": {
         "id": "uuid",
-        "title": "Others"
-      }
+        "title": "Others",
+        "created_at": "2020-04-20T00:00:49.620Z",
+        "updated_at": "2020-04-20T00:00:49.620Z",
+      },
+      "created_at": "2020-04-20T00:00:49.620Z",
+      "updated_at": "2020-04-20T00:00:49.620Z",
     },
     {
       "id": "uuid",
@@ -104,8 +116,12 @@ Agora que você já está com o template clonado e pronto para continuar, você 
       "type": "outcome",
       "category": {
         "id": "uuid",
-        "title": "Recreation"
-      }
+        "title": "Recreation",
+        "created_at": "2020-04-20T00:00:49.620Z",
+        "updated_at": "2020-04-20T00:00:49.620Z",
+      },
+      "created_at": "2020-04-20T00:00:49.620Z",
+      "updated_at": "2020-04-20T00:00:49.620Z",
     }
   ],
   "balance": {

@@ -5,7 +5,7 @@
 
 <p align="center">
   <a href="README.en.md">English</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="README.md">Portuguese</a>&nbsp;&nbsp;&nbsp;
+  <a href="README.md">Português</a>&nbsp;&nbsp;&nbsp;
 </p>
 
 ## Índice de desafios

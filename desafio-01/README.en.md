@@ -32,12 +32,12 @@ In this challenge, you must plan your studies.
 
 For that, you must create a cronogram that will be adapted according to your time and rhythm.
 
-Define what'll be your study schedule, creating tasks that will be attached to a calendar, to help you keep focus and always aligned with your objectives!
+Define what'll be your study schedule, creating tasks that will be attached to a calendar, to help you study and always be aligned with your goals!
 
 ### Cronogram template
 
 To help you with that challenge, we created a template that you can duplicate through the Notion platform.
-Notion works either on mobile platforms or desktop platforms, and both can be downloaded in the [Oficial Page](https://www.notion.so/product).
+Notion works either on mobile or desktop platforms, and both can be downloaded in the [Oficial Page](https://www.notion.so/product).
 
 To start using the template, you must access the link above and click in the button "Duplicate" which is in the menu at the top right of the screen.
 
@@ -49,7 +49,7 @@ To start using the template, you must access the link above and click in the but
   <img width="80%" src="./assets/cronograma-diario.png">
 </p>
 
-In this section you must inform a schedule that you will dedicate during your journey as a developer, after all, the studies routine will be the first step to you achieve your goals as quickly as possible!
+In this section you must inform your schedule, the time you will dedicate for your journey as a developer, after all, the studies routine will be the first step in order to achieve your goals as quickly as possible!
 
 ### Defining a daily schedule
 
@@ -59,17 +59,17 @@ In this section you must inform a schedule that you will dedicate during your jo
 
 Here you must plan your daily tasks so you can be prepared to all the content that you'll consume during the week.
 
-You can follow the available template above or create your own study schedule, so you can always be organized and focused on your objectives.
+You can follow the available template above or create your own study schedule, so you can always be organized and focused on your goals.
 
 We have already prepared everything that you can do in this first week of the bootcamp content, you just need to adapt it according to your routine.
 
-Tip: Add extra content like readings and podcasts, remember to have short breaks to rest to assimulate the material studied. Also add time to create content, such as posts on a blog or linkedin.
+Tip: Add extra content like readings and podcasts, remember to have short breaks to rest to assimulate the content studied. Also add time to create content, such as posts on a blog or linkedin.
 
 ## :calendar: Deliver
 
 This challenge must be delivered
 
-After competing the challenge, posting on Linkedin about it is a good way to demonstrate your efforts to evolve your career for future oportunities.
+After completing the challenge, posting on Linkedin about it is a good way to demonstrate your efforts to evolve your career for future oportunities.
 
 ## :memo: Licence
 

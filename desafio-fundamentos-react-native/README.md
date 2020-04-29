@@ -114,7 +114,7 @@ Para esse desafio, temos os seguintes testes:
 
 - **`should be able to add products to the cart`**: Para que esse teste passe, no seu arquivo onde contém o contexto do carrinho, você deve permitir que a função `addToCart` adicione um novo item ao carrinho.
 
-- **`should be able to increment quantity`**: Para que esse teste passe, no seu arquivo onde contém o contexto do carrinho, você deve permitir que a função `decrement` altere incremente em `1` unidade a quantidade de um item que está armazenado no contexto.
+- **`should be able to increment quantity`**: Para que esse teste passe, no seu arquivo onde contém o contexto do carrinho, você deve permitir que a função `increment` altere incremente em `1` unidade a quantidade de um item que está armazenado no contexto.
 
 - **`should be able to decrement quantity`**: Para que esse teste passe, no seu arquivo onde contém o contexto do carrinho, você deve permitir que a função `decrement` altere decremente em `1` unidade a quantidade de um item que está armazenado no contexto.
 

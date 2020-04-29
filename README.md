@@ -3,6 +3,11 @@
   Desafios Bootcamp GoStack
 </h2>
 
+<p align="center">
+  <a href="README.en.md">English</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="README.md">Portuguese</a>&nbsp;&nbsp;&nbsp;
+</p>
+
 ## Índice de desafios
 
 - [00 - Dúvidas frequentes sobre os desafios](https://github.com/rocketseat/bootcamp-gostack-desafios/tree/master/faq-desafios)

@@ -3,7 +3,7 @@
   Desafios Bootcamp GoStack
 </h2>
 
-### *Leia em outras linguagens: [Inglês](README.en.md)*
+### *Read this in other languages: [English](README.en.md)*
 
 ## Índice de desafios
 

@@ -3,7 +3,10 @@
   Bootcamp GoStack Challenges
 </h2>
 
-### *Read this in other languages: [Portuguese](README.md)*
+<p align="center">
+  <a href="README.en.md">English</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="README.md">Portuguese</a>
+</p>
 
 ## Table of Contents
 

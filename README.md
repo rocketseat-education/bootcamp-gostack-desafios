@@ -3,7 +3,10 @@
   Desafios Bootcamp GoStack
 </h2>
 
-### *Read this in other languages: [English](README.en.md)*
+<p align="center">
+  <a href="README.en.md">English</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="README.md">Portuguese</a>&nbsp;&nbsp;&nbsp;
+</p>
 
 ## Índice de desafios
 

@@ -1,7 +1,7 @@
 <img alt="GoStack" src="https://storage.googleapis.com/golden-wind/bootcamp-gostack/header-desafios.png" />
 
 <h3 align="center">
-  Challenge 1: Planning my studies
+  Challenge 01: Planning my studies
 </h3>
 
 <p align="center">“Your only limitation is yourself”!</blockquote>

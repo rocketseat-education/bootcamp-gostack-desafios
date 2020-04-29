@@ -76,10 +76,10 @@ Agora que você já está com o template clonado e pronto para continuar, você 
         "id": "uuid",
         "title": "Salary",
         "created_at": "2020-04-20T00:00:49.620Z",
-        "updated_at": "2020-04-20T00:00:49.620Z",
+        "updated_at": "2020-04-20T00:00:49.620Z"
       },
       "created_at": "2020-04-20T00:00:49.620Z",
-      "updated_at": "2020-04-20T00:00:49.620Z",
+      "updated_at": "2020-04-20T00:00:49.620Z"
     },
     {
       "id": "uuid",
@@ -90,10 +90,10 @@ Agora que você já está com o template clonado e pronto para continuar, você 
         "id": "uuid",
         "title": "Others",
         "created_at": "2020-04-20T00:00:49.620Z",
-        "updated_at": "2020-04-20T00:00:49.620Z",
+        "updated_at": "2020-04-20T00:00:49.620Z"
       },
       "created_at": "2020-04-20T00:00:49.620Z",
-      "updated_at": "2020-04-20T00:00:49.620Z",
+      "updated_at": "2020-04-20T00:00:49.620Z"
     },
     {
       "id": "uuid",
@@ -104,10 +104,10 @@ Agora que você já está com o template clonado e pronto para continuar, você 
         "id": "uuid",
         "title": "Others",
         "created_at": "2020-04-20T00:00:49.620Z",
-        "updated_at": "2020-04-20T00:00:49.620Z",
+        "updated_at": "2020-04-20T00:00:49.620Z"
       },
       "created_at": "2020-04-20T00:00:49.620Z",
-      "updated_at": "2020-04-20T00:00:49.620Z",
+      "updated_at": "2020-04-20T00:00:49.620Z"
     },
     {
       "id": "uuid",
@@ -118,10 +118,10 @@ Agora que você já está com o template clonado e pronto para continuar, você 
         "id": "uuid",
         "title": "Recreation",
         "created_at": "2020-04-20T00:00:49.620Z",
-        "updated_at": "2020-04-20T00:00:49.620Z",
+        "updated_at": "2020-04-20T00:00:49.620Z"
       },
       "created_at": "2020-04-20T00:00:49.620Z",
-      "updated_at": "2020-04-20T00:00:49.620Z",
+      "updated_at": "2020-04-20T00:00:49.620Z"
     }
   ],
   "balance": {
@@ -174,7 +174,11 @@ Esse desafio deve ser entregue a partir da plataforma Skylab, envie o link do re
 
 ## Solução do desafio
 
-Caso você queira ver como resolver o desafio, fizemos um video explicando o passo a passo para cumprir com todos os requisitos da aplicação. [Clique aqui](https://www.youtube.com/watch?v=aEUDRBBbo-Y) para assistir.
+Caso você queira ver como resolver o desafio, fizemos um video explicando o passo a passo para cumprir com todos os requisitos da aplicação:
+
+<a href="https://www.youtube.com/watch?v=aEUDRBBbo-Y" target="_blank" align="center">
+  <img src="./assets/challenge-06-thumb.png">
+</a>
 
 ## :memo: Licença
 

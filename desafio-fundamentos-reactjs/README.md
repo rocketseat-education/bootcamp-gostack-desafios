@@ -55,7 +55,7 @@ Além disso, tenha certeza que as informações da categoria, estão sendo retor
   "id": "c0512e43-6589-4dc8-bd0c-2a3f71b347aa",
   "title": "Loan",
   "type": "income",
-  "value": "1500.00",
+  "value": 1500.0,
   "category_id": "d93eccc7-64bb-4268-b825-9200103f3a8b",
   "created_at": "2020-04-20T00:00:49.620Z",
   "updated_at": "2020-04-20T00:00:49.620Z",

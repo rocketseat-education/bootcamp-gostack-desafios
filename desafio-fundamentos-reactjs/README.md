@@ -44,7 +44,8 @@ Agora navegue até a pasta criada e abra no Visual Studio Code, lembre-se de exe
 
 ### Preparando o backend
 
-Antes de tudo, para que seu frontend se conecte corretamente ao backend, vá até a pasta do seu `backend` e execute o comando `yarn add cors @types/cors`.
+
+Antes de tudo, para que seu frontend se conecte corretamente ao backend, vá até a pasta do seu `backend` e execute os comandos `yarn add cors` e depois `yarn add @types/cors -D`.
 
 Depois disso vá até o seu `app.ts` ainda no backend, e importe o `cors` e adicione `app.use(cors())` antes da linha que contém `app.use(routes)`;
 
@@ -132,6 +133,15 @@ Para esse desafio, temos os seguintes testes:
 ## :calendar: Entrega
 
 Esse desafio deve ser entregue a partir da plataforma Skylab, envie o link do repositório que você fez suas alterações. Após concluir o desafio, fazer um post no Linkedin e postar o código no Github é uma boa forma de demonstrar seus conhecimentos e esforços para evoluir na sua carreira para oportunidades futuras.
+
+
+## Solução do desafio
+
+Caso você queira ver como resolver o desafio, fizemos um video explicando o passo a passo para cumprir com todos os requisitos da aplicação:
+
+<a href="https://youtu.be/9YQRZK5mJlw" target="_blank" align="center">
+  <img src="./assets/challenge-07-thumb.png">
+</a>
 
 ## :memo: Licença
 

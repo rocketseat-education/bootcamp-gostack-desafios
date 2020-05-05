@@ -44,7 +44,7 @@ Agora navegue até a pasta criada e abra no Visual Studio Code, lembre-se de exe
 
 ### Preparando o backend
 
-Antes de tudo, para que seu frontend se conecte corretamente ao backend, vá até a pasta do seu `backend` e execute o comando `yarn add cors @types/cors`.
+Antes de tudo, para que seu frontend se conecte corretamente ao backend, vá até a pasta do seu `backend` e execute os comandos `yarn add cors` e depois `yarn add @types/cors -D`.
 
 Depois disso vá até o seu `app.ts` ainda no backend, e importe o `cors` e adicione `app.use(cors())` antes da linha que contém `app.use(routes)`;
 

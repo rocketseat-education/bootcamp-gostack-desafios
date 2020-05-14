@@ -19,6 +19,7 @@
 - [06 - Database and Files Upload with NodeJS](https://github.com/Rocketseat/bootcamp-gostack-desafios/tree/master/desafio-database-upload)
 - [07 - ReactJS Fundamentals](https://github.com/Rocketseat/bootcamp-gostack-desafios/tree/master/desafio-fundamentos-reactjs)
 - [08 - React Native Fundamentals](https://github.com/Rocketseat/bootcamp-gostack-desafios/tree/master/desafio-fundamentos-react-native)
+- [09 - Database relationships in Node.js](https://github.com/Rocketseat/bootcamp-gostack-desafios/tree/master/desafio-database-relations)
 
 ## :memo: Licence
 

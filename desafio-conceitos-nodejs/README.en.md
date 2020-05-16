@@ -28,7 +28,7 @@
 
 ## :rocket: About the challenge
 
-In this challenge, you must create a application to practive what you have learned in Node.js!
+In this challenge, you must create a application to practice what you have learned in Node.js!
 
 Thils will be an application to storage repositories of your portfolio, that will allow you to list, update, and delete repositories, and besides that, the repositories can also receive likes.
 

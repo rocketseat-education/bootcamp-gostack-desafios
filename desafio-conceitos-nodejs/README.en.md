@@ -4,7 +4,7 @@
   Challenge 02: Node.js Concepts
 </h3>
 
-<p align="center">“Don't wait to plant, only have patient to harvest”!</blockquote>
+<p align="center">“Don't wait to plant, only have patience to harvest”!</blockquote>
 
 <p align="center">
   <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/rocketseat/bootcamp-gostack-desafios?color=%2304D361">
@@ -72,7 +72,7 @@ It may be difficult to see because it is just a number, but think that each like
 
 Good studies <3
 
-### Testing Specification
+### Tests Specification
 
 In each test, you have a brief description of what your application must do in order for the test suits pass.
 

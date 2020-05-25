@@ -82,7 +82,7 @@ Agora que você já está com o template clonado e pronto para continuar, você 
 
 **Dica**: Após remover o item da sua API, lembre-se de remover ele também da listagem.
 
-- **`Alterar disponibilidade dos pratos de comida da sua API`**: Em sua página Dashboard você deve alterar a disponibilidade de um prato de comida ao clicar no switch.
+- **`Alterar disponibilidade dos pratos de comida da sua API`**: Em sua página Dashboard você deve alterar a disponibilidade de um prato de comida ao clicar no switch que é controlado pelo valor de `available`.
 
 ### Específicação dos testes
 
@@ -105,14 +105,6 @@ Para esse desafio, temos os seguintes testes:
 ## :calendar: Entrega
 
 Esse desafio deve ser entregue a partir da plataforma Skylab, envie o link do repositório que você fez suas alterações. Após concluir o desafio, fazer um post no Linkedin e postar o código no Github é uma boa forma de demonstrar seus conhecimentos e esforços para evoluir na sua carreira para oportunidades futuras.
-
-## Solução do desafio
-
-Caso você queira ver como resolver o desafio, fizemos um video explicando o passo a passo para cumprir com todos os requisitos da aplicação:
-
-<a href="https://youtu.be/9YQRZK5mJlw" target="_blank" align="center">
-  <img src="./assets/challenge-07-thumb.png">
-</a>
 
 ## :memo: Licença
 

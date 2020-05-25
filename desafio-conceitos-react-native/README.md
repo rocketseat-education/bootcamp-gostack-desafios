@@ -4,7 +4,7 @@
   Desafio 04: Conceitos do React Native
 </h3>
 
-<p align="center">“Sucesso não é o resultado de um jogo, mas o destino de uma jornada”!</blockquote>
+<blockquote align="center">“Sucesso não é o resultado de um jogo, mas o destino de uma jornada”!</blockquote>
 
 <p align="center">
   <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/rocketseat/bootcamp-gostack-desafios?color=%2304D361">

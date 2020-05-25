@@ -4,7 +4,7 @@
   Desafio 1: Planejando meus estudos
 </h3>
 
-<p align="center">“Sua única limitação é você mesmo”!</blockquote>
+<blockquote align="center">“Sua única limitação é você mesmo”!</blockquote>
 
 <p align="center">
   <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/rocketseat/bootcamp-gostack-desafios?color=%2304D361">

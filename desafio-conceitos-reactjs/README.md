@@ -4,7 +4,7 @@
   Desafio 03: Conceitos do ReactJS
 </h3>
 
-<p align="center"><blockquote align="center">“Faça seu melhor, mas sempre com prazo de entrega”!</blockquote>
+<blockquote align="center">“Faça seu melhor, mas sempre com prazo de entrega”!</blockquote>
 
 <p align="center">
   <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/rocketseat/bootcamp-gostack-desafios?color=%2304D361">

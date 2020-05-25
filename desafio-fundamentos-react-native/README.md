@@ -4,7 +4,7 @@
   Desafio 08: Fundamentos do React Native
 </h3>
 
-<p align="center"><blockquote align="center">“Não existe linha de chegada, a vitória está em se manter correndo”!</blockquote>
+<blockquote align="center">“Não existe linha de chegada, a vitória está em se manter correndo”!</blockquote>
 
 <p align="center">
   <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/rocketseat/bootcamp-gostack-desafios?color=%2304D361">

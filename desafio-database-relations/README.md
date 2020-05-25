@@ -4,7 +4,7 @@
   Desafio 09: Relacionamentos com banco de dados no Node.js
 </h3>
 
-<p align="center"><blockquote align="center">“Mude você e todo o resto mudará naturalmente”!</blockquote>
+<blockquote align="center">“Mude você e todo o resto mudará naturalmente”!</blockquote>
 
 <p align="center">
   <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/rocketseat/bootcamp-gostack-desafios?color=%2304D361">

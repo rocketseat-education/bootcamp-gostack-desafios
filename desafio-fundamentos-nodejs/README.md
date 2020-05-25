@@ -4,7 +4,7 @@
   Desafio 05: Primeiro projeto Node.js
 </h3>
 
-<p align="center"><blockquote align="center">“Para quem fica melhor a cada dia, ficar pronto é utopia”!</blockquote>
+<blockquote align="center">“Para quem fica melhor a cada dia, ficar pronto é utopia”!</blockquote>
 
 <p align="center">
   <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/rocketseat/bootcamp-gostack-desafios?color=%2304D361">

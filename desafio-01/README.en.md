@@ -4,7 +4,6 @@
   Challenge 01: Planning my studies
 </h3>
 
-<p align="center">
 <blockquote align="center">“Your only limitation is yourself”!</blockquote>
 
 <p align="center">

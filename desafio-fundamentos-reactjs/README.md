@@ -4,7 +4,7 @@
   Desafio 07: GoFinances Web
 </h3>
 
-<p align="center"><blockquote align="center">“Não espere resultados brilhantes se suas metas não forem claras”!</blockquote>
+<blockquote align="center">“Não espere resultados brilhantes se suas metas não forem claras”!</blockquote>
 
 <p align="center">
   <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/rocketseat/bootcamp-gostack-desafios?color=%2304D361">

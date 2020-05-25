@@ -4,7 +4,7 @@
   Desafio 06: Banco de dados e upload de arquivos no Node.js
 </h3>
 
-<p align="center">“Só deseje as coisas as quais você está disposto a lutar”!</blockquote>
+<p align="center"><blockquote align="center">“Só deseje as coisas as quais você está disposto a lutar”!</blockquote>
 
 <p align="center">
   <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/rocketseat/bootcamp-gostack-desafios?color=%2304D361">

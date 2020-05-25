@@ -4,7 +4,7 @@
   Challenge 02: Node.js Concepts
 </h3>
 
-<p align="center">“Don't wait to plant, only have patience to harvest”!</blockquote>
+<p align="center"><blockquote align="center">“Don't wait to plant, only have patience to harvest”!</blockquote>
 
 <p align="center">
   <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/rocketseat/bootcamp-gostack-desafios?color=%2304D361">

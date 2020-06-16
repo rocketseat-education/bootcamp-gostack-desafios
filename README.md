@@ -21,6 +21,7 @@
 - [08 - Fundamentos do React Native](https://github.com/Rocketseat/bootcamp-gostack-desafios/tree/master/desafio-fundamentos-react-native)
 - [09 - Relacionamentos com banco de dados no Node.js](https://github.com/Rocketseat/bootcamp-gostack-desafios/tree/master/desafio-database-relations)
 - [10 - CRUD no ReactJS](https://github.com/Rocketseat/bootcamp-gostack-desafios/tree/master/desafio-reactjs-crud)
+- [11 - Navegação e filtros no React Native](https://github.com/Rocketseat/bootcamp-gostack-desafios/tree/master/desafio-react-native-delivery)
 
 ## :memo: Licença
 

@@ -49,9 +49,13 @@ Antes de tudo, para que você tenha os dados para exibir em tela, criamos um arq
 Para isso, deixamos instalado no seu package.json uma dependência chamada `json-server`, e um arquivo chamado `server.json` que contém os dados para as seguintes rotas:
 
 **Rota `/foods`**: Retorna todas as comidas cadastradas na API
+
 **Rota `/foods/:id`**: Retorna um prato de comida cadastradas na API baseado no `id`
+
 **Rota `/categories`**: Retorna todas as categorias cadastradas na API
+
 **Rota `/orders`**: Retorna todas os pedidos que foram cadastrados na API
+
 **Rota `/favorites`**: Retorna todas as comidas favoritas que foram cadastrados na API
 
 ```js

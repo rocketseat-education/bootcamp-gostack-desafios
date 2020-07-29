@@ -32,37 +32,151 @@ Nesse desafio, você vai estar criando uma nova aplicação para aprender novas 
 
 Essa será uma aplicação que deve permitir a criação de clientes, produtos e pedidos, onde o cliente pode gerar novos pedidos de compra de certos produtos, como um pequeno e-commerce.
 
-### Template da aplicação
+### 1º PASSO - Utilizar template da aplicação
 
 Para te ajudar nesse desafio, criamos para você um modelo que você deve utilizar como um template do Github.
 
 O template está disponível na seguinte url: **[Acessar Template](https://github.com/Rocketseat/gostack-template-typeorm-relations)**
 
-**Dica**: Caso não saiba utilizar repositórios do Github como template, temos um guia em **[nosso FAQ](https://github.com/Rocketseat/bootcamp-gostack-desafios/tree/master/faq-desafios).**
+**DICA**: Caso não saiba utilizar repositórios do Github como template, temos um guia em **[nosso FAQ](https://github.com/Rocketseat/bootcamp-gostack-desafios/tree/master/faq-desafios).**
 
-Agora navegue até a pasta criada e abra no Visual Studio Code, lembre-se de executar o comando `yarn` no seu terminal para instalar todas as dependências.
+---
 
-### Rotas da aplicação
+Agora que você já está com o template clonado e pronto para continuar, navegue até a pasta criada e abra no Visual Studio Code. Você deverá verificar os arquivos da pasta `src` e completar onde não possui código com o código para atingir os objetivos deste desafio.
 
-Agora que você já está com o template clonado e pronto para continuar, você deve verificar os arquivos da pasta `src` e completar onde não possui código com o código para atingir os objetivos de cada rota.
+⚠️ Lembre-se de executar o comando `yarn` no seu terminal para instalar todas as dependências.
 
-- **`POST /customers`**: A rota deve receber `name` e `email` dentro do corpo da requisição, sendo o `name` o nome do cliente a ser cadastrado. Ao cadastrar um novo cliente, ele deve ser armazenado dentro do seu banco de dados e deve ser retornado o cliente criado. Ao cadastrar no banco de dados, na tabela `customers` deverá possuir os campos `name`, `email`, `created_at`, `updated_at`.
+### 2º PASSO - Configurar o banco de dados
 
-**Dica**: Antes de criar um novo cliente, sempre verifique se já existe um cliente com o mesmo e-mail. Caso ela exista, retorne um erro.
+Crie um banco de dados PostgreSQL com o nome `gostack_desafio09_tests`
 
-- **`POST /products`**: Essa rota deve receber `name`, `price` e `quantity` dentro do corpo da requisição, sendo o `name` o nome do produto a ser cadastrado, `price` o valor unitário e `quantity` a quantidade existente em estoque do produto. Com esses dados devem ser criados no banco de dados um novo produto com os seguintes campos: `name`, `price`, `quantity`, `created_at`, `updated_at`.
+### 3º PASSO - Configurar injeções de dependência
 
-**Dica 1**: Antes de criar um novo produto, sempre verifique se já existe um produto com o mesmo nome. Caso ela exista, retorne um erro.
+Navegue até o arquivo `index.ts` dentro da pasta `src/shared/container` e faça o registro das injeções de dependência para serem utilizados posteriormente.
 
-**Dica 2**: Para o campo `price`, você pode utilizar o `type` como `decimal` na sua migration, passando também as propriedades `precision` e `scale`.
+### 4º PASSO - Criar e configurar migrations
 
-- **`POST /orders/`**: Nessa rota você deve receber no corpo da requisição o `customer_id` e um array de products, contendo o `id` e a `quantity` que você deseja adicionar a um novo pedido. Aqui você deve cadastrar na tabela `order` um novo pedido, que estará relacionado ao `customer_id` informado, `created_at` e `updated_at` . Já na tabela `orders_products`, você deve armazenar o `product_id`, `order_id`, `price` e `quantity`, `created_at` e `updated_at`.
+Migration `CreateCustomers` cria tabela `customers` conforme _entitie_ `Customer`
+Migration `CreateProducts` cria tabela `products` conforme _entitie_ `Product`
+Migration `CreateOrders` cria tabela `orders` conforme _entitie_ `Order`
+Migration `CreateOrdersProducts` cria tabela `orders_products` conforme _entitie_ `OrdersProducts`
 
-**Dica 1**: Nessa funcionalidade, você precisará fazer um relacionamento de N:N entre produtos e pedidos, onde vários produtos podem estar em vários pedidos, com isso você deve sempre armazenar o valor do produto no momento da compra e a quantidade pedida na tabela pivô com nome de `orders_products`, essa tabela vai ter os campos `id`, `order_id`, `product_id`, `quantity`, `price`, `created_at` e `updated_at`. Para esse tipo de relacionamento, você pode verificar na documentação do TypeORM sobre [como fazer relacionamento muitos-para-muitos com propriedades customizadas](https://github.com/typeorm/typeorm/blob/master/docs/many-to-many-relations.md#many-to-many-relations-with-custom-properties).
+Migration `AddCustomerIdToOrders` adiciona coluna `customer_id` na tabela `orders` e _foreign key_ com a coluna `id` a tabela `customers`
 
-**Dica 2**: Além disso, você pode também utilizar o método de cascade do TypeORM, que irá adicionar na sua tabela `order_products` os produtos que você passar por parametro para a entidade de `orders` automaticamente, você pode saber mais sobre isso aqui: [Opção de cascade](https://github.com/typeorm/typeorm/blob/master/docs/relations.md#cascade-options)
+Migration `AddOrderIdToOrdersProducts` adiciona coluna `order_id` na tabela `orders_products` e _foreign key_ com a coluna `id` a tabela `orders`
 
-**Dica 3**: A sua requisição do insomnia deve enviar um JSON com o formato parecido com esse:
+Migration `AddProductIdToOrdersProducts` adiciona coluna `product_id` na tabela `orders_products` e _foreign key_ com a coluna `id` a tabela `products`
+
+**DICA**: Para o campo `price`, você pode utilizar o `type` como `decimal`, passando também as propriedades `precision` e `scale`. Verifique na documentação do TypeORM [como configurar as propriedade precision e scale](https://typeorm.delightful.studio/interfaces/_decorator_options_columnnumericoptions_.columnnumericoptions.html#precision).
+
+### 5º PASSO - Configurar _entities:_
+
+### `Customer`
+
+### `Product`
+
+Esta _entitie_ deve possuir um relacionamento com a _entitie_ `OrdersProducts` através do item `order_products`. Esse item serve para relacionar o id do produto com o pedido completo que será salvo na tabela `order_products`. Para este item será necessário fazer o relacionamento `@OneToMany` com a _entitie_ `OrdersProducts`, passando um apelido de referência, pois cada produto poderá estar em vários pedidos.
+
+### `Order`
+
+Esta _entitie_ deve possuir um relacionamento com a _entitie_ `OrdersProducts` através do item `order_products`. Esse item serve para relacionar o id do pedido com o pedido completo que será salvo na tabela `order_products`. Para este item será necessário fazer o relacionamento `@OneToMany` com a _entitie_ `OrdersProducts`, passando um apelido de referência, pois cada pedido poderá estar em vários pedidos.
+
+O item `customer` servirá para fazer um relacionamento `@ManyToOne` com a _entitie_ `Customer` e criar a coluna `customer_id` através do `@JoinColumn`. O objetivo é armazenar o id do comprador na coluna `customer_id` da tabela `orders`.
+
+Você pode também utilizar o método `cascade` do TypeORM, que irá adicionar na tabela `order_products` os produtos que você passar por parâmetro para a _entitie_ `Order` automaticamente. Verifique na documentação do TypeORM [como utilizar a opção cascade](https://github.com/typeorm/typeorm/blob/master/docs/relations.md#cascade-options).
+
+### `OrdersProducts`
+
+Esta _entitie_ faz o relacionamento entre pedidos e produtos. Na tabela pivô `orders_products` será armazenado o número do pedido (proveniente da tabela `orders`), o id do produto (proveniente da tabela `products`), a quantidade e o valor do produto no momento da compra.
+
+Deverá ser utilizado o relacionamento `@ManyToOne` para referenciar os relacionamentos feitos nas _entities_ `Product` e `Order` e então criar as colunas `order_id` e `product_id` para armazenar os valores provenientes das suas respectivas tabelas.
+
+Para esse tipo de relacionamento, verifique na documentação do TypeORM [como fazer relacionamento muitos-para-muitos com propriedades customizadas](https://github.com/typeorm/typeorm/blob/master/docs/many-to-many-relations.md#many-to-many-relations-with-custom-properties).
+
+<p align="center">
+  <img src="./relations.gif" alt="Relacionamentos do banco de dados">
+Modelagem feita no SqlDBM para melhor ilustrar os relacionamentos.
+</p>
+
+## 6º PASSO - Configurar _repositories:_
+
+### `CustomersRepository`
+
+### `ProductsRepository`
+
+Neste _repository_, na função `findAllById` você poderá mapear os IDs recebidos no array de produtos e utilizar a função `In()` do TypeORM para buscar pelos IDs no método `find()`.
+
+### `OrdersRepository`
+
+Neste _repository_ você pode utilizar a opção [relations](https://github.com/typeorm/typeorm/blob/master/docs/find-options.md#basic-options) para o método findOne do TypeORM, informando os nomes das tabelas que você deseja buscar o relacionamento, ou utilizar o [eager do TypeORM](https://github.com/typeorm/typeorm/blob/master/docs/eager-and-lazy-relations.md#eager-relations) na _entitie_.
+
+## 7º PASSO - Configurar _services:_
+
+⚠️ Antes de criar as regras de negócio, lembre-se de criar as injeções de dependência conforme foram registradas no **3º PASSO**.
+
+### `CreateCustomerService`
+
+Este _service_ irá receber `name` e `email` que deverá ser salvo no banco de dados através do método `create` do `customersRepository`, porém antes deverá ser verificado se já existe um `customer` com o mesmo `email`. Caso exista, retorne um erro.
+
+Após o cadastro deverá ser retornado o `customer` criado.
+
+### `CreateProductService`
+
+Este _service_ irá receber `name`, `price` e `quantity` que deverá ser salvo no banco de dados através do método `create` do `productsRepository`, porém antes deverá ser verificado se já existe um `product` com o mesmo `name`. Caso exista, retorne um erro.
+
+Após o cadastro deverá ser retornado o `product` criado.
+
+### `FindOrderService`
+
+Este _service_ irá receber od `id` do pedido que será consultado no banco de dados através do método `findById` do `ordersRepository`.
+
+Se o `id` informado NÃO existir no banco de dados, retorne um erro.
+
+Se o `id` informado existir no banco de dados, retorne o pedido correspondente.
+
+### `CreateOrderService`
+
+Este _service_ irá receber o pedido contendo o `customer_id`, e um array de `products` com `id` e `quantity`, que deverá ser salvo no banco de dados através do método `create` do `ordersRepository`, porém antes deverá feito as seguintes verificações:
+
+- **1ª VERIFICAÇÃO**
+  Utilize o método `findById` do `customersRepository` para verificar se o `customer_id` informado existe no banco de dados, se não existir retorne um erro.
+
+- **2ª VERIFICAÇÃO**
+  Utilize o método `findAllById` do `productsRepository` para verificar se os produtos do array `products` informado existem no banco de dados, se não existir nenhum retorne um erro.
+
+- **3ª VERIFICAÇÃO**
+  Faça um `map()` no array de produtos da 2ª VERIFICAÇÃO e armazene o `id` de cada um num novo array.
+  Faça um filtro no array recebido de `products` para identificar quais produtos não foram encontrados. Para cada `product.id` deste filtro deverá ser verificado o que não existe no array resultante do `map()` criado anteriormente.
+  Se no array resultante deste filtro conter algum item, retorne um erro dizendo qual produto não foi encontrado.
+
+- **4ª VERIFICAÇÃO**
+  Faça um filtro no array `products` recebido e verifique se as quantidades solicitadas estão disponíveis. Para cada item deste filtro faça um filtro no array de produtos da 2ª VERIFICAÇÃO e, deixe passar somente os items que possuem `quantity` < que a `quantity` informada na requisição.
+
+Se no array resultante deste filtro conter algum item, retorne um erro dizendo que a quantidade do produto requisitado não está disponível.
+
+Após passar em todas as verificações anteriores, formate os dados para salvar no banco de dados.
+
+Faça um `map()` no array `products` recebido e para cada item faça a formatação conforme a interface `IProduct` do `ICreateOrderDTO` que é o formato que deverá ser enviado ao método `create` do `ordersRepository`. O motivo de fazer essa formatação é porque o preço não foi enviado na requisição, apenas o `id` do produto e a `quantity` desejada. Para buscar o preço, faça um filtro no array de produtos da 2ª VERIFICAÇÃO.
+
+Após criar o pedido no banco de dados, abstraia o `order_products` do resultado do `ordersRepository.create` e faça um `map()` criando um novo array, para cada item deste array mapeado informe o `id` do produto e a `quantity`, porém na quantidade deverá ser feito um filtro no array de produtos da 2ª VERIFICAÇÃO subtraindo a `quantity` do resultado do `map()`. O resultado deste array deverá ser enviado através do método `updateQuantity` do `productsRepository`.
+
+## 8º PASSO - Configurar _controllers:_
+
+### `CustomersController`
+
+O método `create` deve receber `name` e `email` dentro do corpo da requisição, sendo o `name` o nome do cliente a ser cadastrado. Ao cadastrar um novo cliente, ele deve ser armazenado dentro do seu banco de dados e deve ser retornado o cliente criado.
+
+### `ProductsController`
+
+O método `create` deve receber `name`, `price` e `quantity` dentro do corpo da requisição, sendo o `name` o nome do produto a ser cadastrado, `price` o valor unitário e `quantity` a quantidade existente em estoque do produto.
+
+### `OrdersController`
+
+O método `show` deve receber no endereço da rota o `id` do pedido que deseja ser encontrado, este `id` deverá ser enviado para o _service_ `FindOrderService` utilizando o princípio de inversão de dependência.
+
+O método `create` deve receber no corpo da requisição o `customer_id` e um array de `products`, contendo o `id` do produto e a `quantity` desejada para compor o pedido que deverá ser enviado para o _service_ `CreateOrderService` utilizando o princípio de inversão de dependência.
+
+A requisição do **INSOMNIA** deve enviar um JSON com o formato parecido com esse para a rota **`POST /orders`**
 
 ```json
 {
@@ -80,7 +194,7 @@ Agora que você já está com o template clonado e pronto para continuar, você 
 }
 ```
 
-**Dica 4**: Uma chamada a essa rota deve retornar os dados do cliente, produtos do pedido e id do pedido, num formato parecido com o seguinte:
+Uma chamada a essa rota deve retornar os dados do cliente, produtos do pedido e id do pedido, num formato parecido com o seguinte:
 
 ```json
 {
@@ -117,10 +231,6 @@ Agora que você já está com o template clonado e pronto para continuar, você 
 }
 ```
 
-- **`GET /orders/:id`**: Essa rota deve retornar as informações de um pedido específico, com todas as informações que podem ser recuperadas através dos relacionamentos entre a tabela `orders`, `customers` e `orders_products`.
-
-**Dica**: Aqui você pode utilizar a opção [eager do TypeORM](https://github.com/typeorm/typeorm/blob/master/docs/eager-and-lazy-relations.md#eager-relations) ou passar a opção [relations](https://github.com/typeorm/typeorm/blob/master/docs/find-options.md) para o método findOne do TypeORM, informando os nomes das tabelas que você deseja buscar o relacionamento.
-
 ### Links úteis
 
 - [Cascade option TypeORM](https://github.com/typeorm/typeorm/blob/master/docs/relations.md#cascade-options)
@@ -128,7 +238,7 @@ Agora que você já está com o template clonado e pronto para continuar, você 
 - [Eager loading com TypeORM](https://github.com/typeorm/typeorm/blob/master/docs/eager-and-lazy-relations.md#eager-relations)
 - [Opções de relacionamentos do TypeORM](https://github.com/typeorm/typeorm/blob/master/docs/find-options.md)
 
-### Específicação dos testes
+### Especificação dos testes
 
 Em cada teste, tem uma breve descrição no que sua aplicação deve cumprir para que o teste passe.
 
@@ -137,24 +247,24 @@ Caso você tenha dúvidas quanto ao que são os testes, e como interpretá-los, 
 Para esse desafio, temos os seguintes testes:
 
 <h4 align="center">
-  ⚠️ Antes de rodar os testes, crie um banco de dados com o nome "gostack_desafio09_tests" para que todos os testes possam executar corretamente ⚠️
+  ⚠️ Antes de rodar os testes, certifique-se de que banco de dados com o nome "gostack_desafio09_tests" esteja configurado corretamente ⚠️
 </h4>
 
 - **`should be able to create a new customer`**: Para que esse teste passe, sua aplicação deve permitir que um cliente seja criado, e retorne um json com o cliente criado.
 
-- **`should not be able to create a customer with one e-mail thats already registered`**: Para que esse teste passe, sua aplicação deve retornar um erro quando você tentar cadastrar um cliente com um e-mail que já esteja cadastrado no banco de dados.
+- **`should NOT be able to create a customer with one e-mail thats already registered`**: Para que esse teste passe, sua aplicação deve retornar um erro quando você tentar cadastrar um cliente com um e-mail que já esteja cadastrado no banco de dados.
 
 - **`should be able to create a new product`**: Para que esse teste passe, sua aplicação deve permitir que um produto seja criado, e retorne um json com o produto criado.
 
-- **`should not be able to create a duplicated product`**: Para que esse teste passe, sua aplicação deve retornar um erro quando você tentar cadastrar um produto com um nome que já esteja cadastrado no banco de dados.
+- **`should NOT be able to create a duplicated product`**: Para que esse teste passe, sua aplicação deve retornar um erro quando você tentar cadastrar um produto com um nome que já esteja cadastrado no banco de dados.
 
 - **`should be able to create a new order`**: Para que esse teste passe, sua aplicação deve permitir que um pedido seja criado, e retorne um json com o todos os dados do pedido criado.
 
-- **`should not be able to create an order with a invalid customer`**: Para que esse teste passe, sua aplicação não deve permitir a criação de um novo pedido com um cliente que não existe no banco de dados, retornando um erro.
+- **`should NOT be able to create an order with a invalid customer`**: Para que esse teste passe, sua aplicação não deve permitir a criação de um novo pedido com um cliente que não existe no banco de dados, retornando um erro.
 
-- **`should not be able to create an order with invalid products`**: Para que esse teste passe, sua aplicação não deve permitir a criação de um novo pedido com um produtos que não existem no banco de dados, retornando um erro caso um ou mais dos produtos enviados não exista no banco de dados.
+- **`should NOT be able to create an order with invalid products`**: Para que esse teste passe, sua aplicação não deve permitir a criação de um novo pedido com um produtos que não existem no banco de dados, retornando um erro caso um ou mais dos produtos enviados não exista no banco de dados.
 
-- **`should not be able to create an order with products with insufficient quantities`**: Para que esse teste passe, sua aplicação não deve permitir a criação de um novo pedido com um produtos que não possuem quantidade disponível, retornando um erro caso um ou mais dos produtos enviados não possua a quantidade necessária.
+- **`should NOT be able to create an order with products with insufficient quantities`**: Para que esse teste passe, sua aplicação não deve permitir a criação de um novo pedido com um produtos que não possuem quantidade disponível, retornando um erro caso um ou mais dos produtos enviados não possua a quantidade necessária.
 
 - **`should be able to subtract an product total quantity when it is ordered`**: Para que esse teste passe, sua aplicação deve permitir que, quando um novo pedido for criado, seja alterada a quantidade total dos produtos baseado na quantidade pedida.
 

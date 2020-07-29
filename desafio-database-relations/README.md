@@ -52,7 +52,7 @@ Agora que você já está com o template clonado e pronto para continuar, navegu
 
 Crie um banco de dados PostgreSQL com o nome `gostack_desafio09` para que você possa realizar testes das rotas com o **INSOMNIA**.
 
-Para rodar os testes o nome do banco de dados deve ser `gostack_desafio09_tests`.
+Para rodar os testes automatizados o nome do banco de dados deve ser `gostack_desafio09_tests`.
 
 ---
 
@@ -62,11 +62,14 @@ Navegue até o arquivo `index.ts` da pasta `src/shared/container` e faça o regi
 
 ---
 
-### 4º PASSO - Criar e configurar migrations
+### 4º PASSO - Criar e configurar _migrations_
 
 Migration `CreateCustomers` cria tabela `customers` conforme _entitie_ `Customer`
+
 Migration `CreateProducts` cria tabela `products` conforme _entitie_ `Product`
+
 Migration `CreateOrders` cria tabela `orders` conforme _entitie_ `Order`
+
 Migration `CreateOrdersProducts` cria tabela `orders_products` conforme _entitie_ `OrdersProducts`
 
 Migration `AddCustomerIdToOrders` adiciona coluna `customer_id` na tabela `orders` e _foreign key_ com a coluna `id` a tabela `customers`
@@ -79,7 +82,7 @@ Migration `AddProductIdToOrdersProducts` adiciona coluna `product_id` na tabela 
 
 ---
 
-### 5º PASSO - Configurar _entities:_
+### 5º PASSO - Configurar _entities_
 
 ### `Customer`
 
@@ -110,7 +113,7 @@ Modelagem feita no SqlDBM para melhor ilustrar os relacionamentos.
 
 ---
 
-## 6º PASSO - Configurar _repositories:_
+## 6º PASSO - Configurar _repositories_
 
 ### `CustomersRepository`
 
@@ -124,7 +127,7 @@ Neste _repository_ você pode utilizar a opção [relations](https://github.com/
 
 ---
 
-## 7º PASSO - Configurar _services:_
+## 7º PASSO - Configurar _services_
 
 ⚠️ Antes de criar as regras de negócio, lembre-se de criar as injeções de dependência conforme foram registradas no **3º PASSO**.
 
@@ -176,7 +179,7 @@ Após criar o pedido no banco de dados, abstraia o `order_products` do resultado
 
 ---
 
-## 8º PASSO - Configurar _controllers:_
+## 8º PASSO - Configurar _controllers_
 
 ### `CustomersController`
 
@@ -249,7 +252,7 @@ Uma chamada a essa rota deve retornar os dados do cliente, produtos do pedido e 
 
 ---
 
-## 9º PASSO - Testes
+## 9º PASSO - Realizar testes automatizados
 
 Em cada teste, tem uma breve descrição no que sua aplicação deve cumprir para que o teste passe.
 

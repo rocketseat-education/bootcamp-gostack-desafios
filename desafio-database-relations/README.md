@@ -46,13 +46,21 @@ Agora que você já está com o template clonado e pronto para continuar, navegu
 
 ⚠️ Lembre-se de executar o comando `yarn` no seu terminal para instalar todas as dependências.
 
+---
+
 ### 2º PASSO - Configurar o banco de dados
 
-Crie um banco de dados PostgreSQL com o nome `gostack_desafio09_tests`
+Crie um banco de dados PostgreSQL com o nome `gostack_desafio09` para que você possa realizar testes das rotas com o **INSOMNIA**.
+
+Para rodar os testes o nome do banco de dados deve ser `gostack_desafio09_tests`.
+
+---
 
 ### 3º PASSO - Configurar injeções de dependência
 
-Navegue até o arquivo `index.ts` dentro da pasta `src/shared/container` e faça o registro das injeções de dependência para serem utilizados posteriormente.
+Navegue até o arquivo `index.ts` da pasta `src/shared/container` e faça o registro das injeções de dependência para serem utilizadas posteriormente.
+
+---
 
 ### 4º PASSO - Criar e configurar migrations
 
@@ -68,6 +76,8 @@ Migration `AddOrderIdToOrdersProducts` adiciona coluna `order_id` na tabela `ord
 Migration `AddProductIdToOrdersProducts` adiciona coluna `product_id` na tabela `orders_products` e _foreign key_ com a coluna `id` a tabela `products`
 
 **DICA**: Para o campo `price`, você pode utilizar o `type` como `decimal`, passando também as propriedades `precision` e `scale`. Verifique na documentação do TypeORM [como configurar as propriedade precision e scale](https://typeorm.delightful.studio/interfaces/_decorator_options_columnnumericoptions_.columnnumericoptions.html#precision).
+
+---
 
 ### 5º PASSO - Configurar _entities:_
 
@@ -98,6 +108,8 @@ Para esse tipo de relacionamento, verifique na documentação do TypeORM [como f
 Modelagem feita no SqlDBM para melhor ilustrar os relacionamentos.
 </p>
 
+---
+
 ## 6º PASSO - Configurar _repositories:_
 
 ### `CustomersRepository`
@@ -109,6 +121,8 @@ Neste _repository_, na função `findAllById` você poderá mapear os IDs recebi
 ### `OrdersRepository`
 
 Neste _repository_ você pode utilizar a opção [relations](https://github.com/typeorm/typeorm/blob/master/docs/find-options.md#basic-options) para o método findOne do TypeORM, informando os nomes das tabelas que você deseja buscar o relacionamento, ou utilizar o [eager do TypeORM](https://github.com/typeorm/typeorm/blob/master/docs/eager-and-lazy-relations.md#eager-relations) na _entitie_.
+
+---
 
 ## 7º PASSO - Configurar _services:_
 
@@ -159,6 +173,8 @@ Após passar em todas as verificações anteriores, formate os dados para salvar
 Faça um `map()` no array `products` recebido e para cada item faça a formatação conforme a interface `IProduct` do `ICreateOrderDTO` que é o formato que deverá ser enviado ao método `create` do `ordersRepository`. O motivo de fazer essa formatação é porque o preço não foi enviado na requisição, apenas o `id` do produto e a `quantity` desejada. Para buscar o preço, faça um filtro no array de produtos da 2ª VERIFICAÇÃO.
 
 Após criar o pedido no banco de dados, abstraia o `order_products` do resultado do `ordersRepository.create` e faça um `map()` criando um novo array, para cada item deste array mapeado informe o `id` do produto e a `quantity`, porém na quantidade deverá ser feito um filtro no array de produtos da 2ª VERIFICAÇÃO subtraindo a `quantity` do resultado do `map()`. O resultado deste array deverá ser enviado através do método `updateQuantity` do `productsRepository`.
+
+---
 
 ## 8º PASSO - Configurar _controllers:_
 
@@ -231,14 +247,9 @@ Uma chamada a essa rota deve retornar os dados do cliente, produtos do pedido e 
 }
 ```
 
-### Links úteis
+---
 
-- [Cascade option TypeORM](https://github.com/typeorm/typeorm/blob/master/docs/relations.md#cascade-options)
-- [Relacionamento many-to-many personalizado](https://github.com/typeorm/typeorm/blob/master/docs/many-to-many-relations.md#many-to-many-relations-with-custom-properties)
-- [Eager loading com TypeORM](https://github.com/typeorm/typeorm/blob/master/docs/eager-and-lazy-relations.md#eager-relations)
-- [Opções de relacionamentos do TypeORM](https://github.com/typeorm/typeorm/blob/master/docs/find-options.md)
-
-### Especificação dos testes
+## 9º PASSO - Testes
 
 Em cada teste, tem uma breve descrição no que sua aplicação deve cumprir para que o teste passe.
 
@@ -269,6 +280,13 @@ Para esse desafio, temos os seguintes testes:
 - **`should be able to subtract an product total quantity when it is ordered`**: Para que esse teste passe, sua aplicação deve permitir que, quando um novo pedido for criado, seja alterada a quantidade total dos produtos baseado na quantidade pedida.
 
 - **`should be able to list one specific order`**: Para que esse teste passe, você deve permitir que a rota `orders/:id` retorne um pedido, contendo todas as informações do pedido com o relacionamento de `customer` e `order_products`.
+
+### Links úteis
+
+- [Cascade option TypeORM](https://github.com/typeorm/typeorm/blob/master/docs/relations.md#cascade-options)
+- [Relacionamento many-to-many personalizado](https://github.com/typeorm/typeorm/blob/master/docs/many-to-many-relations.md#many-to-many-relations-with-custom-properties)
+- [Eager loading com TypeORM](https://github.com/typeorm/typeorm/blob/master/docs/eager-and-lazy-relations.md#eager-relations)
+- [Opções de relacionamentos do TypeORM](https://github.com/typeorm/typeorm/blob/master/docs/find-options.md)
 
 ## :calendar: Entrega
 

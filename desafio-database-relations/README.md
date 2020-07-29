@@ -32,7 +32,7 @@ Nesse desafio, você vai estar criando uma nova aplicação para aprender novas 
 
 Essa será uma aplicação que deve permitir a criação de clientes, produtos e pedidos, onde o cliente pode gerar novos pedidos de compra de certos produtos, como um pequeno e-commerce.
 
-### 1º PASSO - Utilizar template da aplicação
+## 1º PASSO - Utilizar template da aplicação
 
 Para te ajudar nesse desafio, criamos para você um modelo que você deve utilizar como um template do Github.
 
@@ -48,7 +48,7 @@ Agora que você já está com o template clonado e pronto para continuar, navegu
 
 ---
 
-### 2º PASSO - Configurar o banco de dados
+## 2º PASSO - Configurar o banco de dados
 
 Crie um banco de dados PostgreSQL com o nome `gostack_desafio09` para que você possa realizar testes das rotas com o **INSOMNIA**.
 
@@ -56,13 +56,13 @@ Para rodar os testes automatizados o nome do banco de dados deve ser `gostack_de
 
 ---
 
-### 3º PASSO - Configurar injeções de dependência
+## 3º PASSO - Configurar injeções de dependência
 
 Navegue até o arquivo `index.ts` da pasta `src/shared/container` e faça o registro das injeções de dependência para serem utilizadas posteriormente.
 
 ---
 
-### 4º PASSO - Criar e configurar _migrations_
+## 4º PASSO - Criar e configurar _migrations_
 
 Migration `CreateCustomers` cria tabela `customers` conforme _entitie_ `Customer`
 
@@ -82,7 +82,7 @@ Migration `AddProductIdToOrdersProducts` adiciona coluna `product_id` na tabela 
 
 ---
 
-### 5º PASSO - Configurar _entities_
+## 5º PASSO - Configurar _entities_
 
 ### `Customer`
 
@@ -94,7 +94,7 @@ Esta _entitie_ deve possuir um relacionamento com a _entitie_ `OrdersProducts` a
 
 Esta _entitie_ deve possuir um relacionamento com a _entitie_ `OrdersProducts` através do item `order_products`. Esse item serve para relacionar o id do pedido com o pedido completo que será salvo na tabela `order_products`. Para este item será necessário fazer o relacionamento `@OneToMany` com a _entitie_ `OrdersProducts`, passando um apelido de referência, pois cada pedido poderá estar em vários pedidos.
 
-O item `customer` servirá para fazer um relacionamento `@ManyToOne` com a _entitie_ `Customer` e criar a coluna `customer_id` através do `@JoinColumn`. O objetivo é armazenar o id do comprador na coluna `customer_id` da tabela `orders`.
+O item `customer` servirá para fazer um relacionamento `@ManyToOne` com a _entitie_ `Customer` e criar a coluna `customer_id` através do `@JoinColumn`. O objetivo é armazenar o id do cliente na coluna `customer_id` da tabela `orders`.
 
 Você pode também utilizar o método `cascade` do TypeORM, que irá adicionar na tabela `order_products` os produtos que você passar por parâmetro para a _entitie_ `Order` automaticamente. Verifique na documentação do TypeORM [como utilizar a opção cascade](https://github.com/typeorm/typeorm/blob/master/docs/relations.md#cascade-options).
 
@@ -133,19 +133,19 @@ Neste _repository_ você pode utilizar a opção [relations](https://github.com/
 
 ### `CreateCustomerService`
 
-Este _service_ irá receber `name` e `email` que deverá ser salvo no banco de dados através do método `create` do `customersRepository`, porém antes deverá ser verificado se já existe um `customer` com o mesmo `email`. Caso exista, retorne um erro.
+Este _service_ irá receber `name` e `email` que deverá ser salvo no banco de dados através do método `create` do `customersRepository`, porém antes deverá ser verificado se já existe um `customer` com o mesmo `email`. Utilize o método `findByEmail` do `customersRepository` e caso exista, retorne um erro.
 
 Após o cadastro deverá ser retornado o `customer` criado.
 
 ### `CreateProductService`
 
-Este _service_ irá receber `name`, `price` e `quantity` que deverá ser salvo no banco de dados através do método `create` do `productsRepository`, porém antes deverá ser verificado se já existe um `product` com o mesmo `name`. Caso exista, retorne um erro.
+Este _service_ irá receber `name`, `price` e `quantity` que deverá ser salvo no banco de dados através do método `create` do `productsRepository`, porém antes deverá ser verificado se já existe um `product` com o mesmo `name`. Utilize o método `findByName` do `productsRepository` e caso exista, retorne um erro.
 
 Após o cadastro deverá ser retornado o `product` criado.
 
 ### `FindOrderService`
 
-Este _service_ irá receber od `id` do pedido que será consultado no banco de dados através do método `findById` do `ordersRepository`.
+Este _service_ irá receber o `id` do pedido que será consultado no banco de dados através do método `findById` do `ordersRepository`.
 
 Se o `id` informado NÃO existir no banco de dados, retorne um erro.
 
@@ -155,27 +155,29 @@ Se o `id` informado existir no banco de dados, retorne o pedido correspondente.
 
 Este _service_ irá receber o pedido contendo o `customer_id`, e um array de `products` com `id` e `quantity`, que deverá ser salvo no banco de dados através do método `create` do `ordersRepository`, porém antes deverá feito as seguintes verificações:
 
-- **1ª VERIFICAÇÃO**
+- **1ª VERIFICAÇÃO:**
   Utilize o método `findById` do `customersRepository` para verificar se o `customer_id` informado existe no banco de dados, se não existir retorne um erro.
 
-- **2ª VERIFICAÇÃO**
+- **2ª VERIFICAÇÃO:**
   Utilize o método `findAllById` do `productsRepository` para verificar se os produtos do array `products` informado existem no banco de dados, se não existir nenhum retorne um erro.
 
-- **3ª VERIFICAÇÃO**
+- **3ª VERIFICAÇÃO:**
   Faça um `map()` no array de produtos da 2ª VERIFICAÇÃO e armazene o `id` de cada um num novo array.
-  Faça um filtro no array recebido de `products` para identificar quais produtos não foram encontrados. Para cada `product.id` deste filtro deverá ser verificado o que não existe no array resultante do `map()` criado anteriormente.
+
+  Faça um filtro no array recebido de `products` para identificar quais produtos não foram encontrados. Para cada `product.id` deste filtro deverá ser feito uma busca para encontrar o produto que não existe no array resultante do `map()` criado anteriormente.
+
   Se no array resultante deste filtro conter algum item, retorne um erro dizendo qual produto não foi encontrado.
 
-- **4ª VERIFICAÇÃO**
+- **4ª VERIFICAÇÃO:**
   Faça um filtro no array `products` recebido e verifique se as quantidades solicitadas estão disponíveis. Para cada item deste filtro faça um filtro no array de produtos da 2ª VERIFICAÇÃO e, deixe passar somente os items que possuem `quantity` < que a `quantity` informada na requisição.
 
-Se no array resultante deste filtro conter algum item, retorne um erro dizendo que a quantidade do produto requisitado não está disponível.
+  Se no array resultante deste filtro conter algum item, retorne um erro dizendo que a quantidade do produto requisitado não está disponível.
 
 Após passar em todas as verificações anteriores, formate os dados para salvar no banco de dados.
 
-Faça um `map()` no array `products` recebido e para cada item faça a formatação conforme a interface `IProduct` do `ICreateOrderDTO` que é o formato que deverá ser enviado ao método `create` do `ordersRepository`. O motivo de fazer essa formatação é porque o preço não foi enviado na requisição, apenas o `id` do produto e a `quantity` desejada. Para buscar o preço, faça um filtro no array de produtos da 2ª VERIFICAÇÃO.
+Faça um `map()` no array `products` recebido e para cada item faça a formatação conforme a interface `IProduct` do `ICreateOrderDTO` que é o formato que deverá ser enviado ao método `create` do `ordersRepository`. O motivo de fazer essa formatação é porque o preço não foi enviado na requisição, apenas o `id` do produto e a `quantity` desejada. Para buscar o preço, faça um filtro no array de produtos da 2ª VERIFICAÇÃO e encontre o preço atual do produto com id correspondente.
 
-Após criar o pedido no banco de dados, abstraia o `order_products` do resultado do `ordersRepository.create` e faça um `map()` criando um novo array, para cada item deste array mapeado informe o `id` do produto e a `quantity`, porém na quantidade deverá ser feito um filtro no array de produtos da 2ª VERIFICAÇÃO subtraindo a `quantity` do resultado do `map()`. O resultado deste array deverá ser enviado através do método `updateQuantity` do `productsRepository`.
+Após criar o pedido no banco de dados, abstraia o `order_products` do resultado do `ordersRepository.create` e faça um `map()` criando um novo array, para cada item deste array mapeado crie um objeto com o `id` do produto e a `quantity`, porém na quantidade deverá ser feito um filtro no array de produtos da 2ª VERIFICAÇÃO subtraindo a `quantity` do resultado do `map()`. O resultado deste array deverá ser enviado através do método `updateQuantity` do `productsRepository` para atualizar as quantidades dos produtos no banco após a efetivação do pedido.
 
 ---
 
@@ -191,7 +193,9 @@ O método `create` deve receber `name`, `price` e `quantity` dentro do corpo da 
 
 ### `OrdersController`
 
-O método `show` deve receber no endereço da rota o `id` do pedido que deseja ser encontrado, este `id` deverá ser enviado para o _service_ `FindOrderService` utilizando o princípio de inversão de dependência.
+O método `show` deve receber nos parâmetros da rota o `id` do pedido que deseja pesquisar, este `id` deverá ser enviado para o _service_ `FindOrderService` utilizando o princípio de inversão de dependência.
+
+---
 
 O método `create` deve receber no corpo da requisição o `customer_id` e um array de `products`, contendo o `id` do produto e a `quantity` desejada para compor o pedido que deverá ser enviado para o _service_ `CreateOrderService` utilizando o princípio de inversão de dependência.
 

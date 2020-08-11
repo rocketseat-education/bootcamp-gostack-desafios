@@ -68,7 +68,7 @@ Dica: Adicione conteúdo extra como leituras e podcasts, lembre-se de ter pequen
 
 ## :calendar: Entrega
 
-Esse desafio deve ser entregue a partir da plataforma Skylab. Após concluir o desafio, fazer um post no Linkedin sobre ele é uma boa forma de demonstrar seus esforços para evoluir na sua carreira para oportunidades futuras.
+Esse desafio deve ser entregue a partir da plataforma da Rocketseat. Após concluir o desafio, fazer um post no Linkedin sobre ele é uma boa forma de demonstrar seus esforços para evoluir na sua carreira para oportunidades futuras.
 
 ## :memo: Licença
 

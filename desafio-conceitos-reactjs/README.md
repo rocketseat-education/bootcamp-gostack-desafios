@@ -42,7 +42,7 @@ O template está disponível na seguinte url: **[Acessar Template](https://githu
 
 Agora navegue até a pasta criada e abra no Visual Studio Code, execute o comando `yarn` no seu terminal para instalar todas as dependências e já estará pronto para iniciar.
 
-**Atenção:** Não é necessário instalar nenhuma dependencia (como o webpack). O template já vem funcional, e é apenas necessário rodar o comando `yarn start` e codar.
+**Atenção:** Não é necessário instalar nenhuma dependencia (como o webpack). O template já vem funcional, e é apenas necessário rodar o comando `yarn`, para baixar as dependências, e `yarn start` para rodar.
 
 ### Funcionalidades da aplicação
 

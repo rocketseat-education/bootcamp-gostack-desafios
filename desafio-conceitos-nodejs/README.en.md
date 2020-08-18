@@ -1,4 +1,4 @@
-<img alt="GoStack" src="https://storage.googleapis.com/golden-wind/bootcamp-gostack/header-desafios.png" style="width: 100%;"/>
+<img alt="GoStack" src="https://storage.googleapis.com/golden-wind/bootcamp-gostack/header-desafios-new.png" style="width: 100%;"/>
 
 <h3 align="center">
   Challenge 02: Node.js Concepts

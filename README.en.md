@@ -20,6 +20,8 @@
 - [07 - ReactJS Fundamentals](https://github.com/Rocketseat/bootcamp-gostack-desafios/tree/master/desafio-fundamentos-reactjs)
 - [08 - React Native Fundamentals](https://github.com/Rocketseat/bootcamp-gostack-desafios/tree/master/desafio-fundamentos-react-native)
 - [09 - Database relationships in Node.js](https://github.com/Rocketseat/bootcamp-gostack-desafios/tree/master/desafio-database-relations)
+- [10 - CRUD on ReactJS](https://github.com/rocketseat-education/bootcamp-gostack-desafios/tree/master/desafio-reactjs-crud)
+- [11 - Filters and Navigation on React Native](https://github.com/rocketseat-education/bootcamp-gostack-desafios/tree/master/desafio-react-native-delivery)
 
 ## :memo: Licence
 
@@ -27,4 +29,4 @@ This project is under MIT licence. See the archive [LICENSE](LICENSE) to more de
 
 ---
 
-Made with 💜 by Rocketseat :wave: [Entre na nossa comunidade!](https://discordapp.com/invite/gCRAFhc)
+Made with 💜 by Rocketseat :wave: [Join our community!](https://discordapp.com/invite/gCRAFhc)

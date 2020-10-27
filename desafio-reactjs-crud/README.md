@@ -1,4 +1,4 @@
-<img alt="GoStack" src="https://storage.googleapis.com/golden-wind/bootcamp-gostack/header-desafios.png" />
+<img alt="GoStack" src="https://storage.googleapis.com/golden-wind/bootcamp-gostack/header-desafios-new.png" />
 
 <h3 align="center">
   Desafio 10: GoRestaurant Web
@@ -105,6 +105,14 @@ Para esse desafio, temos os seguintes testes:
 ## :calendar: Entrega
 
 Esse desafio deve ser entregue a partir da plataforma da Rocketseat, envie o link do repositório que você fez suas alterações. Após concluir o desafio, fazer um post no Linkedin e postar o código no Github é uma boa forma de demonstrar seus conhecimentos e esforços para evoluir na sua carreira para oportunidades futuras.
+
+## Solução do desafio
+
+Caso você queira ver como resolver o desafio, fizemos um video explicando o passo a passo para cumprir com todos os requisitos da aplicação:
+
+<a href="https://www.youtube.com/watch?v=3CH1h9GLs-4" target="_blank" align="center">
+  <img src="./assets/challenge-10-thumb.png">
+</a>
 
 ## :memo: Licença
 

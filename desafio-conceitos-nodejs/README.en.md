@@ -106,7 +106,7 @@ After completing the challenge, posting on Linkedin about it is a good way to de
 
 ## :memo: Licence
 
-This project is under license from MIT. See the archive [LICENSE](LICENSE) to more details.
+This project is under license from MIT. See the archive [LICENSE](../LICENSE) to more details.
 
 ---
 

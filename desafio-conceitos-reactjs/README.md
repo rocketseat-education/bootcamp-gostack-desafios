@@ -83,5 +83,4 @@ Caso você queira ver como resolver o desafio, fizemos um video explicando o pas
 Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](../LICENSE) para mais detalhes.
 
 ---
-
-Feito com 💜 by Rocketseat :wave: [Entre na nossa comunidade!](https://discordapp.com/invite/gCRAFhc)
+Feito com 💜 by Anderson :wave: [Entre no meu linkedin!](https://www.linkedin.com/in/anderson-fernandes-8b5a50135/)

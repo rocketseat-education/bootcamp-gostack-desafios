@@ -72,7 +72,7 @@ Esse desafio deve ser entregue a partir da plataforma da Rocketseat, envie o lin
 
 ## Solução do desafio
 
-Caso você queira ver como resolver o desafio, fizemos um video explicando o passo a passo para cumprir com todos os requisitos da aplicação:
+Caso você queira ver como resolver o desafio, fizemos um vídeo explicando o passo a passo para cumprir com todos os requisitos da aplicação:
 
 <a href="https://youtu.be/lziAk0J_Ppc?t=1398" target="_blank" align="center">
   <img src="./assets/challenge-03-thumb.png">
